@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps\\AvansDevOps.csproj",
+      "projectUniqueName": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps.csproj",
       "projectName": "AvansDevOps",
-      "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps\\AvansDevOps.csproj",
+      "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps.csproj",
       "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps\\obj\\",
+      "outputPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
