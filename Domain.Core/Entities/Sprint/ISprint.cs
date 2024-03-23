@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Core.Entities.Sprint
 {
-    interface ISprint
+    public interface ISprint
     {
         public int Id { get; }
 

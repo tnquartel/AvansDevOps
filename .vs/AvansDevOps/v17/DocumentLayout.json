@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CAAD6F82-9AC0-4209-9441-E73A2FA78072}|Domain.Services\\Domain.Services.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.services\\patterns\\factory\\factory_interfaces\\isprintfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAAD6F82-9AC0-4209-9441-E73A2FA78072}|Domain.Services\\Domain.Services.csproj|solutionrelative:domain.services\\patterns\\factory\\factory_interfaces\\isprintfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAAD6F82-9AC0-4209-9441-E73A2FA78072}|Domain.Services\\Domain.Services.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.services\\patterns\\factory\\partialsprintfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAAD6F82-9AC0-4209-9441-E73A2FA78072}|Domain.Services\\Domain.Services.csproj|solutionrelative:domain.services\\patterns\\factory\\partialsprintfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAAD6F82-9AC0-4209-9441-E73A2FA78072}|Domain.Services\\Domain.Services.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.services\\patterns\\factory\\releasesprintfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAAD6F82-9AC0-4209-9441-E73A2FA78072}|Domain.Services\\Domain.Services.csproj|solutionrelative:domain.services\\patterns\\factory\\releasesprintfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\entities\\sprint\\isprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\entities\\sprint\\isprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\entities\\backlog\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\entities\\backlog\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\entities\\backlog\\ibacklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\entities\\backlog\\ibacklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\entities\\sprint\\isprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\entities\\sprint\\isprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\entities\\sprint\\releasesprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,18 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3453C66E-911E-47DD-A86B-E781B8D61DC1}|Infrastructure\\Infrastructure.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\infrastructure\\repositories\\inmemorysprintrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3453C66E-911E-47DD-A86B-E781B8D61DC1}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\inmemorysprintrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\factory\\factory_interfaces\\isprintfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\factory\\factory_interfaces\\isprintfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\factory\\partialsprintfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\factory\\partialsprintfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\factory\\releasesprintfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\factory\\releasesprintfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\entities\\thread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,34 +82,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IBacklog.cs",
-              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Backlog\\IBacklog.cs",
-              "RelativeDocumentMoniker": "Domain.Core\\Entities\\Backlog\\IBacklog.cs",
-              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Backlog\\IBacklog.cs",
-              "RelativeToolTip": "Domain.Core\\Entities\\Backlog\\IBacklog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T14:20:19.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InMemoryUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\Repositories\\InMemoryUserRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\InMemoryUserRepository.cs",
-              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\Repositories\\InMemoryUserRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\InMemoryUserRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACMAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T13:52:59.976Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -132,7 +106,69 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "ReleaseSprintFactory.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Patterns\\Factory\\ReleaseSprintFactory.cs",
+              "RelativeDocumentMoniker": "Domain.Services\\Patterns\\Factory\\ReleaseSprintFactory.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Patterns\\Factory\\ReleaseSprintFactory.cs",
+              "RelativeToolTip": "Domain.Services\\Patterns\\Factory\\ReleaseSprintFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T10:19:36.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PartialSprintFactory.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Patterns\\Factory\\PartialSprintFactory.cs",
+              "RelativeDocumentMoniker": "Domain.Services\\Patterns\\Factory\\PartialSprintFactory.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Patterns\\Factory\\PartialSprintFactory.cs",
+              "RelativeToolTip": "Domain.Services\\Patterns\\Factory\\PartialSprintFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T10:19:22.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ISprintFactory.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Patterns\\Factory\\Factory_Interfaces\\ISprintFactory.cs",
+              "RelativeDocumentMoniker": "Domain.Services\\Patterns\\Factory\\Factory_Interfaces\\ISprintFactory.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Patterns\\Factory\\Factory_Interfaces\\ISprintFactory.cs",
+              "RelativeToolTip": "Domain.Services\\Patterns\\Factory\\Factory_Interfaces\\ISprintFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T10:18:42.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBacklog.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Backlog\\IBacklog.cs",
+              "RelativeDocumentMoniker": "Domain.Core\\Entities\\Backlog\\IBacklog.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Backlog\\IBacklog.cs",
+              "RelativeToolTip": "Domain.Core\\Entities\\Backlog\\IBacklog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T14:20:19.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InMemoryUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\Repositories\\InMemoryUserRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\InMemoryUserRepository.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\Repositories\\InMemoryUserRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\InMemoryUserRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T13:52:59.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "PartialSprint.cs",
               "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Sprint\\PartialSprint.cs",
               "RelativeDocumentMoniker": "Domain.Core\\Entities\\Sprint\\PartialSprint.cs",
@@ -140,25 +176,23 @@
               "RelativeToolTip": "Domain.Core\\Entities\\Sprint\\PartialSprint.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T11:02:40.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T11:02:40.009Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Backlog\\Item.cs",
               "RelativeDocumentMoniker": "Domain.Core\\Entities\\Backlog\\Item.cs",
               "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Backlog\\Item.cs",
               "RelativeToolTip": "Domain.Core\\Entities\\Backlog\\Item.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAgAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T13:43:19.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T13:43:19.133Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Activity.cs",
               "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Backlog\\Activity.cs",
               "RelativeDocumentMoniker": "Domain.Core\\Entities\\Backlog\\Activity.cs",
@@ -166,8 +200,7 @@
               "RelativeToolTip": "Domain.Core\\Entities\\Backlog\\Activity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T13:01:39.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T13:01:39.527Z"
             },
             {
               "$type": "Document",
@@ -177,14 +210,13 @@
               "RelativeDocumentMoniker": "Domain.Core\\Entities\\Sprint\\ISprint.cs",
               "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Sprint\\ISprint.cs",
               "RelativeToolTip": "Domain.Core\\Entities\\Sprint\\ISprint.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T11:02:13.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T11:02:13.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ReleaseSprint.cs",
               "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Sprint\\ReleaseSprint.cs",
               "RelativeDocumentMoniker": "Domain.Core\\Entities\\Sprint\\ReleaseSprint.cs",
@@ -192,12 +224,11 @@
               "RelativeToolTip": "Domain.Core\\Entities\\Sprint\\ReleaseSprint.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T10:45:14.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T10:45:14.112Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ISprintRepository.cs",
               "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Repositories\\ISprintRepository.cs",
               "RelativeDocumentMoniker": "Domain.Services\\Repositories\\ISprintRepository.cs",
@@ -205,12 +236,11 @@
               "RelativeToolTip": "Domain.Services\\Repositories\\ISprintRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T11:03:10.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T11:03:10.308Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Domain.Services\\Repositories\\IUserRepository.cs",
@@ -218,12 +248,11 @@
               "RelativeToolTip": "Domain.Services\\Repositories\\IUserRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T13:45:44.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T13:45:44.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "InMemorySprintRepository.cs",
               "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\Repositories\\InMemorySprintRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\InMemorySprintRepository.cs",
@@ -231,47 +260,7 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\InMemorySprintRepository.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwC0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T10:12:50.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ISprintFactory.cs",
-              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Factory\\Factory_Interfaces\\ISprintFactory.cs",
-              "RelativeDocumentMoniker": "Domain.Core\\Factory\\Factory_Interfaces\\ISprintFactory.cs",
-              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Factory\\Factory_Interfaces\\ISprintFactory.cs",
-              "RelativeToolTip": "Domain.Core\\Factory\\Factory_Interfaces\\ISprintFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T10:58:34.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PartialSprintFactory.cs",
-              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Factory\\PartialSprintFactory.cs",
-              "RelativeDocumentMoniker": "Domain.Core\\Factory\\PartialSprintFactory.cs",
-              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Factory\\PartialSprintFactory.cs",
-              "RelativeToolTip": "Domain.Core\\Factory\\PartialSprintFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T11:01:49.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ReleaseSprintFactory.cs",
-              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Factory\\ReleaseSprintFactory.cs",
-              "RelativeDocumentMoniker": "Domain.Core\\Factory\\ReleaseSprintFactory.cs",
-              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Factory\\ReleaseSprintFactory.cs",
-              "RelativeToolTip": "Domain.Core\\Factory\\ReleaseSprintFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T10:59:16.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T10:12:50.492Z"
             },
             {
               "$type": "Document",
@@ -283,8 +272,7 @@
               "RelativeToolTip": "Domain.Core\\Entities\\Thread.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T13:43:32.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T13:43:32.348Z"
             },
             {
               "$type": "Document",
@@ -296,8 +284,7 @@
               "RelativeToolTip": "Domain.Core\\Entities\\Project.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T11:03:26.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T11:03:26.31Z"
             },
             {
               "$type": "Document",
@@ -309,8 +296,7 @@
               "RelativeToolTip": "Domain.Core\\Entities\\DevPipe.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T13:43:14.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T13:43:14.192Z"
             },
             {
               "$type": "Document",
@@ -322,8 +308,7 @@
               "RelativeToolTip": "Domain.Core\\Entities\\Report.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T13:43:28.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T13:43:28.503Z"
             },
             {
               "$type": "Document",
@@ -335,8 +320,7 @@
               "RelativeToolTip": "Domain.Core\\Entities\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T13:43:37.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T13:43:37.486Z"
             }
           ]
         }
