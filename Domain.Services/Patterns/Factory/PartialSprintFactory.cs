@@ -1,4 +1,5 @@
-﻿using Domain.Core.Entities.Sprint;
+﻿using Domain.Core.Entities;
+using Domain.Core.Entities.Sprint;
 using Domain.Services.Patterns.Factory.Factory_Interfaces;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,11 @@ namespace Domain.Services.Patterns.Factory
 {
     class PartialSprintFactory : ISprintFactory
     {
-        public ISprint CreateSprint()
+        private const DevPipe DevPipe = null;
+
+        public ISprint CreateSprint( int Id, Report Report, string Goal, DevPipe DevPipe = DevPipe)
         {
-            return new PartialSprint();
+            return new PartialSprint(Id,Report,Goal);
         }
     }
 }

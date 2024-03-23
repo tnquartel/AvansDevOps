@@ -18,7 +18,7 @@ namespace Infrastructure.Repositories
 
         public void Create(ISprint NewSprint)
         {
-            Sprints.Append(NewSprint);
+            Sprints.Add(NewSprint);
         }
 
         public void Delete(int id)
