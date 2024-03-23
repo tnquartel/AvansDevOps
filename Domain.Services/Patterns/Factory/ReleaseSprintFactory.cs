@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Core.Entities.Sprint;
-using Domain.Core.Factory.Factory_Interfaces;
+using Domain.Services.Patterns.Factory.Factory_Interfaces;
 
-namespace Domain.Core.Factory
+namespace Domain.Services.Patterns.Factory
 {
     class ReleaseSprintFactory : ISprintFactory
     {
