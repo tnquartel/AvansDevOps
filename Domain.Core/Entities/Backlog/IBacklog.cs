@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Core.Entities.Backlog
 {
-    interface IBacklog
+    public interface IBacklog
     {
         public int Id { get; }
 
