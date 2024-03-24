@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Services.Patterns.Adapter.DevOpsAdapter
+namespace Infrastructure.Services.Adapters.DevOps
 {
     public class Azure
     {
