@@ -9,7 +9,7 @@ namespace Domain.Core.Entities.Backlog
     public interface IBacklog
     {
         public int Id { get; }
-
-        public Thread Thread { get; }
+        public User? User { get; }
+        public Thread? Thread { get; }
     }
 }

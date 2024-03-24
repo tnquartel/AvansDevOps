@@ -9,7 +9,7 @@ namespace Domain.Core.Entities.Sprint
 {
     public class ReleaseSprint : ISprint
     {
-        public int Id { get; private set; }
+        public int Id { get; set; }
         public List<IBacklog> Backlogs { get; set; }
         public Report Report { get;}
         public string Goal {get;}

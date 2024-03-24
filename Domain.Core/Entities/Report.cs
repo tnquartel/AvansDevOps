@@ -8,6 +8,6 @@ namespace Domain.Core.Entities
 {
     public class Report
     {
-        public int Id { get; private set; }
+        public int Id { get; set; }
     }
 }

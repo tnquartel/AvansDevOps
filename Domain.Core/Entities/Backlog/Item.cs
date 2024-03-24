@@ -8,10 +8,17 @@ namespace Domain.Core.Entities.Backlog
 {
     public class Item : IBacklog
     {
-        public int Id { get; private set; }
-        public Thread Thread { get; private set; }
+        public int Id { get; set; }
+        public User? User { get; set; }
+        public Thread? Thread { get; set; }
+        public List<Activity> Activities { get; set; }
+        public IStateItem State { get; set; }
 
-        public List<Activity> Activities { get; private set; }
+        public Item( int id,  IStateItem state) { 
+            Id = id;
+            Activities = new List<Activity>();
+            State = state;
+        }
 
-    }
+    }   
 }
