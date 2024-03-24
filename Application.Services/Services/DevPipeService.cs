@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Services.Repositories;
+using Domain.Services.Services;
 
 namespace Application.Services.Services
 {
-    public class DevPipeService
+    public class DevPipeService : IDevPipeService
     {
 
         IDevPipeRepository _repository;
