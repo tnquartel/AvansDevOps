@@ -39,6 +39,7 @@ namespace Application.Services.Services
                 Console.WriteLine("Item can't have duplicate activities");
             }
         }
+        public UserService UserService = new UserService();
 
         // Implements State Pattern
         public void NextState(Item item)
@@ -48,9 +49,19 @@ namespace Application.Services.Services
 
         public void AssignDev(Item item, User user)
         {
-            if (item.User != null)
+            UserService.CoupleToFirstAvailable(item, user);
+        }
+
+        public void NewThread(Item item)
+        {
+            if (item.Thread == null)
             {
-                item.User = user;
+                item.Thread = new MessageThread();
+                item.Thread.ParentItem = item;
+            }
+            else
+            {
+                Console.WriteLine("This item already contains a thread.");
             }
         }
 
