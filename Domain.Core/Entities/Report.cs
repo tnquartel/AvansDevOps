@@ -9,5 +9,8 @@ namespace Domain.Core.Entities
     public class Report
     {
         public int Id { get; set; }
+        public IExport? export { get; set; }
+
+        public Report() { }
     }
 }

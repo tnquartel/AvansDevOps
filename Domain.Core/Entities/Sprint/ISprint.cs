@@ -1,4 +1,5 @@
 ﻿using Domain.Core.Entities.Backlog;
+using Domain.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,8 @@ namespace Domain.Core.Entities.Sprint
         public Report Report { get; }
         public String Goal { get; }
         public List<User> Users { get; set; }
+        public ISubject Subject { get; set; }
+        public User Scrummaster { get;  set; }
 
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Services.Patterns.State.Sprint
+namespace Domain.Services.Services
 {
-    public class Released : ISprintState
+    public interface ISprintService
     {
     }
 }

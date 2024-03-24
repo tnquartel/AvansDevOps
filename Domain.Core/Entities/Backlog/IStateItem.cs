@@ -8,6 +8,7 @@ namespace Domain.Core.Entities.Backlog
 {
     public interface IStateItem
     {
+        // State Interface for State Pattern
         public Item Item { get; set; }
         public void NextState();
     }
