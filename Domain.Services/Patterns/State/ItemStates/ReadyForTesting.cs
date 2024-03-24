@@ -20,5 +20,10 @@ namespace Domain.Services.Patterns.State.ItemStates
         {
             Item.State = new Testing(Item);
         }
+
+        public IStateItem GetState()
+        {
+            return this;
+        }
     }
 }

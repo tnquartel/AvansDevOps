@@ -11,5 +11,7 @@ namespace Domain.Core.Entities.Backlog
         // State Interface for State Pattern
         public Item Item { get; set; }
         public void NextState();
+
+        public IStateItem GetState();
     }
 }
