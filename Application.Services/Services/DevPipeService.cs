@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infrastructure.Services.Observers
+namespace Application.Services.Services
 {
-    public class EmailObserver : IObserver
+    public class DevPipeService
     {
+
     }
 }

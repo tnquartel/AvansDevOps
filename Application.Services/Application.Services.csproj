@@ -11,8 +11,4 @@
     <ProjectReference Include="..\Domain.Services\Domain.Services.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\Interfaces\" />
-  </ItemGroup>
-
 </Project>
