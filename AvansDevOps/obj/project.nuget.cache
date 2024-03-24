@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "A633AgBgI9gi7mRu4fT3l9SFUk64luRAeQt97QmNjr/A+OdPilJulpQEeQIEU+MbGwNhlwzVRlXKQWTy+ssWTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\UI.csproj",
-=======
-  "dgSpecHash": "iZVlsxHXLImqoxyLMAYCrdIW0NF+e5TUSNQkf4McyjQeBzglGkeaIWQFI9F/iedlSKyJ06Jwsq5Ww5r1tziZng==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\AvansDevOps\\UI.csproj",
->>>>>>> main
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
