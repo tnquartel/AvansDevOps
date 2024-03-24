@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Services.Patterns.Adapter.SCMAdapter
+namespace Infrastructure.Services.Adapter.SCM
 {
     public class Github
     // Deze classe is een voorbeeld implementatie van een derde SCM systeem

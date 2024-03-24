@@ -11,5 +11,11 @@ namespace Domain.Core.Entities.Backlog
         public int Id { get; set; }
         public User? User { get; set; }
         public MessageThread? Thread { get; set; }
+        public Item parent { get; set; }
+
+        public ActivityItem(Item parent)
+        {
+            this.parent = parent;
+        }
     }
 }

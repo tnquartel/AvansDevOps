@@ -25,5 +25,10 @@ namespace Domain.Services.Patterns.State.ItemStates
                 Console.WriteLine("States Disconnected");
             }
         }
+
+        public IStateItem GetState()
+        {
+            return this;
+        }
     }
 }

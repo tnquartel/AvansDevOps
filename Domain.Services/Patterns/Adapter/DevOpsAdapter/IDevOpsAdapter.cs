@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Services.Patterns.Adapter.DevOpsAdapter
 {
-    public interface IDevOps
+    public interface IDevOpsAdapter
     {
         void Build();
 
