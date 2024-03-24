@@ -1,4 +1,5 @@
-﻿using Domain.Services.Patterns.Observer;
+﻿using Domain.Core.Entities;
+using Domain.Services.Patterns.Observer;
 using System;
 using System.Collections.Generic;
 using System.Linq;

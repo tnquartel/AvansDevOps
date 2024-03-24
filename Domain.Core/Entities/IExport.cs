@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Core.Entities
 {
-    public class Report
+    public interface IExport
     {
-        public int Id { get; set; }
-        public IExport? export { get; set; }
 
-        public Report() { }
+        // Strategy Interface for Strategy pattern 
+        public void Export();
     }
 }

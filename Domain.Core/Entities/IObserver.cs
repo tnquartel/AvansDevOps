@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Services.Patterns.Observer
+namespace Domain.Core.Entities
 {
     public interface IObserver
     {
