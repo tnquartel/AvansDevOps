@@ -8,6 +8,6 @@ namespace Domain.Core.Entities
 {
     public class Thread
     {
-        public int Id { get; private set; }
+        public int Id { get; set; }
     }
 }

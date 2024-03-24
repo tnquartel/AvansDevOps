@@ -8,6 +8,6 @@ namespace Domain.Core.Entities
 {
     public class DevPipe
     {
-        public int Id { get; private set; }
+        public int Id { get; set; }
     }
 }
