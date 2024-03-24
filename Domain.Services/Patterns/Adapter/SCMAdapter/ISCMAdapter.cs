@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Services.Patterns.Adapter.SCMAdapter
 {
-    public interface ISCM
+    public interface ISCMAdapter
     {
         public void Commit();
 
