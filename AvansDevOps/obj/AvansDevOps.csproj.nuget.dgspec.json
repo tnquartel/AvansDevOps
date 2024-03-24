@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps.csproj": {}
+    "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\AvansDevOps\\AvansDevOps.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps.csproj": {
+    "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\AvansDevOps\\AvansDevOps.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps.csproj",
+        "projectUniqueName": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\AvansDevOps\\AvansDevOps.csproj",
         "projectName": "AvansDevOps",
-        "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps.csproj",
-        "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\obj\\",
+        "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\AvansDevOps\\AvansDevOps.csproj",
+        "packagesPath": "C:\\Users\\gnome\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\AvansDevOps\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gnome\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

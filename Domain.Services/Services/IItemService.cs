@@ -1,0 +1,14 @@
+﻿using Domain.Core.Entities.Backlog;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Domain.Services.Services
+{
+    public interface IItemService
+    {
+        public void NextState(Item item);
+    }
+}

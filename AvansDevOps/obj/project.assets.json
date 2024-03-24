@@ -1,11 +1,89 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Application.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domain.Core": "1.0.0",
+          "Domain.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.Services.dll": {}
+        }
+      },
+      "Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.Core.dll": {}
+        }
+      },
+      "Domain.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Domain.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.Services.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Application.Services": "1.0.0",
+          "Domain.Core": "1.0.0",
+          "Domain.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Application.Services/1.0.0": {
+      "type": "project",
+      "path": "../Application.Services/Application.Services.csproj",
+      "msbuildProject": "../Application.Services/Application.Services.csproj"
+    },
+    "Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../Domain.Core/Domain.Core.csproj",
+      "msbuildProject": "../Domain.Core/Domain.Core.csproj"
+    },
+    "Domain.Services/1.0.0": {
+      "type": "project",
+      "path": "../Domain.Services/Domain.Services.csproj",
+      "msbuildProject": "../Domain.Services/Domain.Services.csproj"
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Application.Services >= 1.0.0",
+      "Domain.Core >= 1.0.0",
+      "Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\thoma\\.nuget\\packages\\": {}
@@ -13,9 +91,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps.csproj",
-      "projectName": "AvansDevOps",
-      "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps.csproj",
+      "projectUniqueName": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\UI.csproj",
+      "projectName": "UI",
+      "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\UI.csproj",
       "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\obj\\",
       "projectStyle": "PackageReference",
@@ -33,7 +111,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Application.Services\\Application.Services.csproj": {
+              "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Application.Services\\Application.Services.csproj"
+            },
+            "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Core\\Domain.Core.csproj": {
+              "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Core\\Domain.Core.csproj"
+            },
+            "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Infrastructure\\Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
