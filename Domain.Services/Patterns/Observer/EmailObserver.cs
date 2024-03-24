@@ -1,4 +1,5 @@
-﻿using Domain.Services.Services.Connectors;
+﻿using Domain.Core.Entities;
+using Domain.Services.Services.Connectors;
 using System;
 using System.Collections.Generic;
 using System.Linq;
