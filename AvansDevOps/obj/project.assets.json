@@ -1,26 +1,104 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Application.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domain.Core": "1.0.0",
+          "Domain.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.Services.dll": {}
+        }
+      },
+      "Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.Core.dll": {}
+        }
+      },
+      "Domain.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Domain.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.Services.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Application.Services": "1.0.0",
+          "Domain.Core": "1.0.0",
+          "Domain.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Application.Services/1.0.0": {
+      "type": "project",
+      "path": "../Application.Services/Application.Services.csproj",
+      "msbuildProject": "../Application.Services/Application.Services.csproj"
+    },
+    "Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../Domain.Core/Domain.Core.csproj",
+      "msbuildProject": "../Domain.Core/Domain.Core.csproj"
+    },
+    "Domain.Services/1.0.0": {
+      "type": "project",
+      "path": "../Domain.Services/Domain.Services.csproj",
+      "msbuildProject": "../Domain.Services/Domain.Services.csproj"
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Application.Services >= 1.0.0",
+      "Domain.Core >= 1.0.0",
+      "Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\thoma\\.nuget\\packages\\": {}
+    "C:\\Users\\gnome\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps.csproj",
-      "projectName": "AvansDevOps",
-      "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\AvansDevOps.csproj",
-      "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\obj\\",
+      "projectUniqueName": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\AvansDevOps\\UI.csproj",
+      "projectName": "UI",
+      "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\AvansDevOps\\UI.csproj",
+      "packagesPath": "C:\\Users\\gnome\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\AvansDevOps\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gnome\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,13 +111,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Application.Services.csproj": {
+              "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Application.Services.csproj"
+            },
+            "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Domain.Core.csproj": {
+              "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Domain.Core.csproj"
+            },
+            "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -61,7 +154,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
