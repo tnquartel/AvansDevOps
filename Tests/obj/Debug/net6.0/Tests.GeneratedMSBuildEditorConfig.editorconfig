@@ -8,6 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Tests
-build_property.ProjectDir = C:\Users\gnome\Documents\school\Jaar 3\SOFA_3\Opdracht\Tests\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\thoma\source\repos\AvansDevOps\Tests\
