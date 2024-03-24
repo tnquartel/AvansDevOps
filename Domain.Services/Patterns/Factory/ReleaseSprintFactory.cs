@@ -15,6 +15,8 @@ namespace Domain.Services.Patterns.Factory
         
         public virtual ISprint CreateSprint(int Id, Report Report, string Goal, DevPipe Pipe)
         {
+            Console.WriteLine("Created Release Sprint");
+
             return new ReleaseSprint( Pipe, Id, Report,  Goal);
         }
     }

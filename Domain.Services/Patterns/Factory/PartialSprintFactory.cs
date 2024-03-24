@@ -15,7 +15,10 @@ namespace Domain.Services.Patterns.Factory
 
         public ISprint CreateSprint( int Id, Report Report, string Goal, DevPipe DevPipe = DevPipe)
         {
+            Console.WriteLine("Created Partial Sprint");
+
             return new PartialSprint(Id,Report,Goal);
+
         }
     }
 }

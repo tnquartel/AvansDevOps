@@ -8,5 +8,7 @@ namespace Domain.Services.Patterns.Observer
 {
     public interface IObserver
     {
+        //Observer part of Observer pattern
+        public void Update(string Message);
     }
 }

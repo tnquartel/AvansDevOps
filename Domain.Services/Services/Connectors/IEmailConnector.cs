@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Core.Entities
+namespace Domain.Services.Services.Connectors
 {
-    internal class ISubject
+    public interface IEmailConnector
     {
+        public void SendEmail(string email);
     }
 }
