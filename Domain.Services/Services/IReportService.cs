@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Services.Patterns.Strategy
+namespace Domain.Services.Services
 {
-    public interface IExporter
-    {
+    public interface IReportService
+    { 
     }
 }

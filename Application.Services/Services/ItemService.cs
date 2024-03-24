@@ -11,6 +11,8 @@ namespace Application.Services.Services
 {
     public class ItemService : IItemService
     {
+
+        // Implements State Pattern
         public void NextState(Item item)
         {
             item.State.NextState();
@@ -20,7 +22,7 @@ namespace Application.Services.Services
         {
             if (item.User != null)
             {
-
+                item.User = user;
             }
         }
     }
