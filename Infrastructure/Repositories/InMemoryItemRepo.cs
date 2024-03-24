@@ -31,7 +31,7 @@ namespace Infrastructure.Repositories
 
         public Item GetOne(int id)
         {
-            var x = from item in Items where item.Id == id select Item;
+            var x = from item in Items where item.Id == id select item;
             return x.First();
         }
 

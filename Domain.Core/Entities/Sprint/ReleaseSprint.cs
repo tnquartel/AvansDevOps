@@ -19,6 +19,7 @@ namespace Domain.Core.Entities.Sprint
         public User? Scrummaster { get; set; }
         public ISprintState State { get; set; }
         public Project Project { get; set; }
+        public Review? Review { get; set; }
         public ReleaseSprint(Report Report, string Goal, ISprintState state, ISubject subject, Project project)
         {
             Project = project;

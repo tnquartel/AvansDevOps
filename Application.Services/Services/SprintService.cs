@@ -19,9 +19,11 @@ namespace Application.Services.Services
 
         private ISprintRepository _repository;
         private IDevPipeService _devPipeService;
-        public SprintService(ISprintRepository sprintRepository, IDevPipeService devPipeService) {
+        private IReportService _reportService;
+        public SprintService(ISprintRepository sprintRepository, IDevPipeService devPipeService, IReportService reportService) {
             _repository = sprintRepository;
             _devPipeService = devPipeService;
+            _reportService = reportService;
         }
         public ISprint NewSprint(string type, Project project)
         {
@@ -131,7 +133,7 @@ namespace Application.Services.Services
             }
         }
 
-        public void AddReport(Report report, PartialSprint sprint)
+        public void AddReview(Review review, PartialSprint sprint)
         {
             if (sprint.State.GetState() is not Finished)
             {
@@ -139,9 +141,9 @@ namespace Application.Services.Services
             }
             else
             {
-                if (sprint.Report != report)
+                if (sprint.Review != review)
                 {
-                    sprint.Report = report;
+                    sprint.Review = review;
                     this.NextState(sprint);
                 }
                 else
@@ -172,6 +174,20 @@ namespace Application.Services.Services
            {
                 Console.WriteLine("Sprint is not yet finished");
            }
+        }
+
+        //FR - 09
+        public void GenerateReport(ISprint sprint)
+        {
+            if (sprint.Report == null)
+            {
+                _reportService.NewReport(sprint);
+            }
+            else
+            {
+                Console.WriteLine("Sprint has already been reported upon");
+            }
+
         }
 
     }
