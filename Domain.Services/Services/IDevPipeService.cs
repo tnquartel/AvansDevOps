@@ -10,6 +10,6 @@ namespace Domain.Services.Services
 {
     public interface IDevPipeService
     {
-        public DevPipe NewDevPipe(ReleaseSprint releaseSprint)
+        public DevPipe NewDevPipe(ISprint releaseSprint);
     }
 }

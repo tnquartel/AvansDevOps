@@ -9,9 +9,9 @@ namespace Infrastructure.Services.Exporters
 {
     public class PngExporter : IExport
     {
-        public void Export()
+        public void Export(string data)
         {
-            Console.WriteLine("Exported to PNG");
+            Console.WriteLine("Exported to PNG : " + data);
         }
     }
 }

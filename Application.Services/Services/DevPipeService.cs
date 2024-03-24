@@ -21,7 +21,7 @@ namespace Application.Services.Services
         }
 
 
-        public DevPipe NewDevPipe(ReleaseSprint releaseSprint)
+        public DevPipe NewDevPipe(ISprint releaseSprint)
         {
             if (releaseSprint.DevPipe != null)
             {
