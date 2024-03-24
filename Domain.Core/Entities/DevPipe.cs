@@ -12,10 +12,10 @@ namespace Domain.Core.Entities
         public int Id { get; set; }
         public ISubject Subject { get; set; }
         public User Scrummaster { get; set; }
-        public ReleaseSprint ReleaseSprint { get; set; }
-        public DevPipe(User scrummaster, ReleaseSprint releaseSprint, ISubject subject) {
+        public ISprint Sprint { get; set; }
+        public DevPipe(User scrummaster, ISprint sprint, ISubject subject) {
             Scrummaster = scrummaster;
-            ReleaseSprint = releaseSprint;
+            Sprint = sprint;
             Subject = subject;
         }
     }

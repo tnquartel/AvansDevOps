@@ -9,6 +9,7 @@ namespace Application.Services.Services
 {
     public class ActivityService : IActivityService
     {
+        
 
     }
 }

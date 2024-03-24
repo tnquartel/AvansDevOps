@@ -9,15 +9,21 @@ namespace Domain.Services.Patterns.State.ItemStates
 {
     public class ToDo : IStateItem
     {
-        public Item Item { get ; set; }
+        public Item? Item { get ; set; }
 
-        public ToDo(Item item) { 
-            Item = item;
+        public ToDo() { 
         }
 
         public void NextState()
         {
-            Item.State = new Doing(Item);
+            if(Item != null)
+            {
+                Item.State = new Doing(Item);
+            }
+            else
+            {
+                Console.WriteLine("States Disconnected");
+            }
         }
     }
 }

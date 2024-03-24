@@ -1,4 +1,6 @@
-﻿using Domain.Core.Entities.Sprint;
+﻿using Domain.Core.Entities;
+using Domain.Core.Entities.Sprint;
+using Domain.Services.Patterns.Observer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +11,9 @@ namespace Domain.Services.Patterns.State.Sprint
 {
     public class Finished : ISprintState
     {
-        public ReleaseSprint Sprint { get; set; }
+        public ISprint Sprint { get; set; }
 
-        public Finished(ReleaseSprint sprint) {
+        public Finished(ISprint sprint) {
             Sprint = sprint;
         }
 
@@ -19,9 +21,16 @@ namespace Domain.Services.Patterns.State.Sprint
             Sprint.State = new Released(Sprint); 
         }
 
-        public void StartPipe()
+        public void PreviousState()
         {
+            var y = new InDevelopment();
+            Sprint.State = y;
+            y.Sprint = Sprint;
+        }
 
+        public ISprintState GetState()
+        {
+            return this;
         }
     }
 }
