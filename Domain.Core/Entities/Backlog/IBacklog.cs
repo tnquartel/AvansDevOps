@@ -10,6 +10,6 @@ namespace Domain.Core.Entities.Backlog
     {
         public int Id { get; }
         public User? User { get; }
-        public Thread? Thread { get; }
+        public MessageThread? Thread { get; }
     }
 }
