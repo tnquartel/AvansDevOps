@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "H+xUU0nozg8gS8cQw9W0F3OYIunt3lksOgswqKNrhkqGnxdpMlHJPUXypHdGmXglGlav7SFOOG8yDDZZsTFm2Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Application.Services\\Application.Services.csproj",
+=======
+  "dgSpecHash": "OQcwJumqRzTOr4ICQJd2A3NAxurXB/0nBqkVfNU1RPlG5yVPZxXADxGBKpxSkaiTxwsaEyX99A1/XJaVCObVIw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Application.Services.csproj",
+>>>>>>> main
   "expectedPackageFiles": [],
   "logs": []
 }
