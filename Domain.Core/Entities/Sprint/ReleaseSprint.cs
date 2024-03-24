@@ -18,14 +18,17 @@ namespace Domain.Core.Entities.Sprint
         public ISubject Subject { get; set; }
         public User? Scrummaster { get; set; }
         public ISprintState State { get; set; }
-        public ReleaseSprint(int Id, Report Report, string Goal, ISprintState state, ISubject subject) {
-            this.Id = Id;
+        public Project Project { get; set; }
+        public ReleaseSprint(Report Report, string Goal, ISprintState state, ISubject subject, Project project)
+        {
+            Project = project;
             this.Report = Report;
             this.Goal = Goal;
             this.Users = new List<User>();
             this.Backlogs = new List<IBacklog>();
             State = state;
             Subject = subject;
+            Project = project;
         }
     }
 }

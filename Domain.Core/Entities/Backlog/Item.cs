@@ -14,8 +14,7 @@ namespace Domain.Core.Entities.Backlog
         public List<ActivityItem> Activities { get; set; }
         public IStateItem State { get; set; }
 
-        public Item( int id,  IStateItem state) { 
-            Id = id;
+        public Item(IStateItem state) { 
             Activities = new List<ActivityItem>();
             State = state;
         }

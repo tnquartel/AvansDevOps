@@ -1,4 +1,5 @@
-﻿using Domain.Services.Services.Connectors;
+﻿using Domain.Core.Entities;
+using Domain.Services.Services.Connectors;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,15 +10,15 @@ namespace Domain.Services.Patterns.Observer
 {
     public class EmailObserver : IObserver
     {
-        private IEmailConnector EmailConnector;
+        private User User { get; set; }
 
-        public EmailObserver(IEmailConnector emailConnector) {
-            EmailConnector = emailConnector;
+        public EmailObserver(User user) {
+            User = user;
         }
 
         public void Update(string Message)
         {
-            EmailConnector.SendEmail(Message);
+            Console.WriteLine(User + " : " + Message);
         }
     }
 }
