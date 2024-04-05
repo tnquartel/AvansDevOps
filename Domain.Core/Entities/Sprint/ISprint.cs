@@ -17,6 +17,9 @@ namespace Domain.Core.Entities.Sprint
         public List<User> Users { get; set; }
         public ISubject Subject { get; set; }
         public User Scrummaster { get;  set; }
-
+        public Project Project { get; set; }
+        public ISprintState State { get; set; }
+        public DevPipe? DevPipe { get; set; }
+        public Review Review { get; set; }
     }
 }

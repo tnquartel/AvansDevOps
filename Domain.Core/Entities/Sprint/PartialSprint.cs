@@ -11,18 +11,23 @@ namespace Domain.Core.Entities.Sprint
     {
         public int Id { get; set; }
         public List<IBacklog> Backlogs { get; set; }
-        public Report Report { get; }
+        public Report Report { get; set; }
         public ISubject Subject { get; set; }
         public User? Scrummaster { get; set; }
         public string Goal {  get; }
         public List<User> Users { get; set ; }
-        public PartialSprint(int id, Report report, string goal, ISubject subject) { 
-            Id = id;
+        public Project Project { get; set; }
+        public ISprintState State { get; set; }
+        public DevPipe? DevPipe { get; set; }
+        public Review? Review { get; set; }
+        public PartialSprint( Report report, string goal, ISprintState state ,ISubject subject,Project project) { 
+            Project = project;
             Report = report;
             Goal = goal;
             Users = new List<User>();
             Backlogs = new List<IBacklog>();
             Subject = subject;
+            State = state;
         }
     }
 }

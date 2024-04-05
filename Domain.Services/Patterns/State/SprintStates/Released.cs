@@ -9,17 +9,23 @@ namespace Domain.Services.Patterns.State.Sprint
 {
     public class Released : ISprintState
     {
-        public ReleaseSprint Sprint { get; set; }
+        public ISprint Sprint { get; set; }
 
-        public Released(ReleaseSprint sprint)
+        public Released(ISprint sprint)
         {
             Sprint = sprint;
         }
 
         public void NextState()
         {
-            Sprint.State = new InDevelopment(Sprint);
+            var x = new InDevelopment();
+            x.Sprint = Sprint;
+            Sprint.State = x;
         }
 
+        public ISprintState GetState()
+        {
+            return this;
+        }
     }
 }

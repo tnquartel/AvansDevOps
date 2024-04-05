@@ -1,4 +1,6 @@
-﻿using Domain.Core.Entities.Sprint;
+﻿using Domain.Core.Entities.Backlog;
+using Domain.Core.Entities.Sprint;
+using Domain.Services.Patterns.State.ItemStates;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,16 +11,26 @@ namespace Domain.Services.Patterns.State.Sprint
 {
     public class InDevelopment : ISprintState
     {
-        public ReleaseSprint Sprint { get; set; }
+        public ISprint? Sprint { get; set; }
 
-        public InDevelopment(ReleaseSprint sprint)
+        public InDevelopment()
         {
-            Sprint = sprint;
         }
 
         public void NextState()
         {
-            Sprint.State = new Finished(Sprint);
+            if (Sprint != null)
+            {
+                Sprint.State = new Finished(Sprint);
+            }
+            else
+            {
+                Console.WriteLine("States Disconnected");
+            }
+        }
+        public ISprintState GetState()
+        {
+            return this;
         }
 
     }

@@ -10,6 +10,6 @@ namespace Domain.Core.Entities
     {
 
         // Strategy Interface for Strategy pattern 
-        public void Export();
+        public void Export(string data);
     }
 }

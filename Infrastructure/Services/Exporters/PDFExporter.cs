@@ -9,9 +9,9 @@ namespace Infrastructure.Services.Exporters
 {
     public class PdfExporter : IExport
     {
-        public void Export()
+        public void Export(string data)
         {
-            Console.WriteLine("Exported to PDF");
+            Console.WriteLine("Exported to PDF : " + data);
         }
     }
 }
