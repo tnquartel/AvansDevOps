@@ -14,13 +14,15 @@ namespace Application.Services.Services
     public class ItemService : IItemService
     {
         IItemRepository _repository;
+        public UserService UserService = new UserService();
+        public IAuthService AuthService = new AuthService();
         public ItemService(IItemRepository itemRepository) {
             _repository = itemRepository;
         }
-        public Item CreateItem()
+        public Item CreateItem(Project project)
         {
             var y = new ToDo();
-            var x = new Item(y);
+            var x = new Item(y, project);
             y.Item = x;
             _repository.Create(x);
             return x;
@@ -39,12 +41,48 @@ namespace Application.Services.Services
                 Console.WriteLine("Item can't have duplicate activities");
             }
         }
-        public UserService UserService = new UserService();
 
         // Implements State Pattern
         public void NextState(Item item)
         {
-            item.State.NextState();
+            if (item.State.GetState() is Tested)
+            {
+                if (AuthService.GetLoggedInUser != null && item.Sprint.Scrummaster.Equals(AuthService.GetLoggedInUser))
+                {
+                    bool alldone = true;
+                    foreach (var activity in item.Activities)
+                    {
+                        if (!activity.isDone)
+                        {
+                            alldone = false;
+                            break;
+                        }
+                    }
+                    if (alldone)
+                    {
+                        item.State.NextState();
+                    }
+                }
+            } else
+            {
+                item.State.NextState();
+            }
+        }
+
+        public void TestAgain(Item item)
+        {
+            if (item.State.GetState() is Tested && AuthService.GetLoggedInUser != null && item.Sprint.Scrummaster.Equals(AuthService.GetLoggedInUser)) 
+            {
+                ((Tested)item.State).TestAgain();
+            }
+        }
+
+        public void FailedTest(Item item)
+        {
+            if (item.State.GetState() is Testing)
+            {
+                ((Testing)item.State).Failed();
+            }
         }
 
         public void AssignDev(Item item, User user)

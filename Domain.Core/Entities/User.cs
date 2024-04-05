@@ -13,8 +13,8 @@ namespace Domain.Core.Entities
         public string Name { get; set; }
         public string Email { get; private set; }
         public string Password { get; set; }
-        public Item CoupledItem { get; set; }
-        public ActivityItem CoupledActivityItem { get; set; }
+        public Item? CoupledItem { get; set; }
+        public ActivityItem? CoupledActivityItem { get; set; }
 
     }
 }

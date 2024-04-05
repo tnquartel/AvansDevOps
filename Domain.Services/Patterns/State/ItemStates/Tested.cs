@@ -18,7 +18,14 @@ namespace Domain.Services.Patterns.State.ItemStates
 
         public void NextState()
         {
+            // only callable by scrummaster
             Item.State = new Done(Item);
+        }
+
+        public void TestAgain()
+        {
+            // only callable by scrummaster
+            Item.State = new ReadyForTesting(Item);
         }
 
         public IStateItem GetState()

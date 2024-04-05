@@ -18,6 +18,11 @@ namespace Application.Services.Services
             UserService.CoupleToFirstAvailable(activity, user);
         }
 
+        public void isDone(ActivityItem activity)
+        {
+            activity.isDone = true;
+        }
+
         public void NewThread(ActivityItem activity) 
         {
             if (activity.Thread == null)

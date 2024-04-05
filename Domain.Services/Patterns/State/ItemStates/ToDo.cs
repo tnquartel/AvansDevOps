@@ -14,6 +14,10 @@ namespace Domain.Services.Patterns.State.ItemStates
         public ToDo() { 
         }
 
+        public ToDo(Item item)
+        {
+            Item = item;
+        }
         public void NextState()
         {
             if(Item != null)

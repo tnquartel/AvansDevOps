@@ -12,10 +12,12 @@ namespace Domain.Core.Entities.Backlog
         public User? User { get; set; }
         public MessageThread? Thread { get; set; }
         public Item parent { get; set; }
+        public Boolean isDone { get; set; }
 
         public ActivityItem(Item parent)
         {
             this.parent = parent;
+            this.isDone= false;
         }
     }
 }

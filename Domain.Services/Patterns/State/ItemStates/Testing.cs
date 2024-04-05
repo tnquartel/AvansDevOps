@@ -29,6 +29,11 @@ namespace Domain.Services.Patterns.State.ItemStates
         public void Failed()
         {
             Item.State = new ToDo(Item);
+            if (Item.User != null)
+            {
+                Item.User.CoupledItem = null;
+                Item.User = null;
+            }
         }
     }
 }
