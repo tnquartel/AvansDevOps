@@ -10,7 +10,7 @@ namespace Domain.Services.Patterns.Adapter.DevOpsAdapter
     {
         void Build();
 
-        void Test();
+        bool Test(bool passed);
 
         void Analyse();
 

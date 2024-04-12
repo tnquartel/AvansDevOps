@@ -22,9 +22,9 @@ namespace Infrastructure.Services.Adapters.DevOps
             this.devops.Builder();
         }
 
-        public void Test()
+        public bool Test(bool passed)
         {
-            this.devops.Tester();
+            return this.devops.Tester(passed);
         }
 
         public void Analyse()

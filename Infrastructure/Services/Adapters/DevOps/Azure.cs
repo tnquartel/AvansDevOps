@@ -14,9 +14,16 @@ namespace Infrastructure.Services.Adapters.DevOps
             Console.WriteLine("Build");
         }
 
-        public void Tester()
+        public bool Tester(bool passed)
         {
-            Console.WriteLine("Test");
+            if (passed)
+            {
+                Console.WriteLine("Tests passed");
+            } else
+            {
+                Console.WriteLine("Tests failed");
+            }
+            return passed;
         }
 
         public void Analyser()
