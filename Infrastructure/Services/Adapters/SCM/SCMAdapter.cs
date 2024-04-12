@@ -20,44 +20,44 @@ namespace Infrastructure.Services.Adapters.SCM
 
         public void Commit()
         {
-            this.scm.Commit();
+            this.scm.CommitChanges();
 
         }
 
         public void Push()
         {
-            this.scm.Push();
+            this.scm.PushChanges();
 
         }
 
         public void Pull()
         {
-            this.scm.Pull();
+            this.scm.PullChanges();
         }
 
         public void Fetch()
         {
-            this.scm.Fetch();
+            this.scm.FetchChanges();
         }
 
         public void Merge()
         {
-            this.scm.Merge();
+            this.scm.MergeBranches();
         }
 
         public void Stage()
         {
-            this.scm.Stage();
+            this.scm.StageChanges();
         }
 
         public void GetBranch()
         {
-            this.scm.GetBranch();
+            this.scm.ReturnBranch();
         }
 
         public void NewBranch(string branchName)
         {
-            this.scm.NewBranch(branchName);
+            this.scm.CreateBranch(branchName);
         }
 
     }

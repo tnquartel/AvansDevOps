@@ -19,40 +19,40 @@ namespace Infrastructure.Services.Adapter.SCM
             this.branch = (string?)this.branches[0];
         }
 
-        public void Commit()
+        public void CommitChanges()
         {
             Console.WriteLine("Commit");
         }
 
-        public void Push()
+        public void PushChanges()
         {
             Console.WriteLine("Push");
         }
 
-        public void Pull()
+        public void PullChanges()
         {
             Console.WriteLine("Pull");
         }
 
-        public void Merge()
+        public void MergeBranches()
         {
             Console.WriteLine("Merge");
         }
-        public void Stage()
+        public void StageChanges()
         {
             Console.WriteLine("Stage");
         }
-        public void Fetch()
+        public void FetchChanges()
         {
             Console.WriteLine("Fetch");
         }
 
-        public void GetBranch()
+        public void ReturnBranch()
         {
             Console.WriteLine("Branch: " + this.branch);
         }
 
-        public void NewBranch(string branchName)
+        public void CreateBranch(string branchName)
         {
             this.branches.Add(branchName);
             Console.WriteLine("NewBranch: " + branchName);

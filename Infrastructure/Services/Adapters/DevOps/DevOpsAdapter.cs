@@ -19,37 +19,37 @@ namespace Infrastructure.Services.Adapters.DevOps
 
         public void Build()
         {
-            this.devops.Build();
+            this.devops.Builder();
         }
 
         public void Test()
         {
-            this.devops.Test();
+            this.devops.Tester();
         }
 
         public void Analyse()
         {
-            this.devops.Analyse();
+            this.devops.Analyser();
         }
 
         public void Deploy()
         {
-            this.devops.Deploy();
+            this.devops.Deployer();
         }
 
         public void GetPackages()
         {
-            this.devops.GetPackages();
+            this.devops.PackagesGetter();
         }
 
         public void GetSources()
         {
-            this.devops.GetSources();
+            this.devops.SourcesGetter();
         }
 
         public void GetUtilities()
         {
-            this.devops.GetUtilities();
+            this.devops.UtilitiesGetter();
         }
     }
 }

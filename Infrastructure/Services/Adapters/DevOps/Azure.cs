@@ -9,37 +9,37 @@ namespace Infrastructure.Services.Adapters.DevOps
     public class Azure
     {
         // Deze classe is een voorbeeld implementatie van een derde DevOps systeem
-        public void Build()
+        public void Builder()
         {
             Console.WriteLine("Build");
         }
 
-        public void Test()
+        public void Tester()
         {
             Console.WriteLine("Test");
         }
 
-        public void Analyse()
+        public void Analyser()
         {
             Console.WriteLine("Analyse");
         }
 
-        public void Deploy()
+        public void Deployer()
         {
             Console.WriteLine("Deploy");
         }
 
-        public void GetSources()
+        public void SourcesGetter()
         {
             Console.WriteLine("Sources");
         }
 
-        public void GetPackages()
+        public void PackagesGetter()
         {
             Console.WriteLine("Package");
         }
 
-        public void GetUtilities()
+        public void UtilitiesGetter()
         {
             Console.WriteLine("Utility");
         }
