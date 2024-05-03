@@ -18,7 +18,9 @@ namespace Domain.Services.Patterns.State.ItemStates
 
         public void NextState()
         {
-            Item.State = new ToDo(Item);
+            var x = new ToDo();
+            Item.State = x;
+            x.Item = Item;
         }
 
         public IStateItem GetState()

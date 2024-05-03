@@ -12,6 +12,6 @@ namespace Domain.Services.Patterns.Factory.Factory_Interfaces
     // Interface for Factory pattern to create sprints.
     interface ISprintFactory
     {
-        public ISprint CreateSprint(int Id, Report Report, string Goal, DevPipe DevPipe);
+        public ISprint CreateSprint(string goal, ISprintState state, ISubject subject, Project project);
     }
 }

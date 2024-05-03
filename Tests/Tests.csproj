@@ -15,6 +15,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+    <PackageReference Include="Moq" Version="4.20.70" />
     <PackageReference Include="xunit" Version="2.7.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.7">
       <PrivateAssets>all</PrivateAssets>
@@ -27,11 +28,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application.Services.Tests\Services\" />
     <Folder Include="Domain.Core.Tests\" />
     <Folder Include="Domain.Services.Tests\" />
     <Folder Include="Infrastructure.Tests\" />
     <Folder Include="UI.Tests\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Services\Application.Services.csproj" />
+    <ProjectReference Include="..\Domain.Core\Domain.Core.csproj" />
+    <ProjectReference Include="..\Domain.Services\Domain.Services.csproj" />
   </ItemGroup>
 
 </Project>

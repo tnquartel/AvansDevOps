@@ -28,7 +28,9 @@ namespace Domain.Services.Patterns.State.ItemStates
 
         public void Failed()
         {
-            Item.State = new ToDo(Item);
+            var x = new ToDo();
+            Item.State = x;
+            x.Item = Item;
         }
     }
 }
