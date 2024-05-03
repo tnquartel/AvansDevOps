@@ -14,7 +14,7 @@ using System.Xml.Linq;
 
 namespace Application.Services.Services
 {
-    internal class SprintService : ISprintService
+    public class SprintService : ISprintService
     {
 
         private ISprintRepository _repository;
@@ -31,12 +31,12 @@ namespace Application.Services.Services
             {
                 case "release":
                     var y = new InDevelopment();
-                    var x = new ReleaseSprint(new Report(),"Software Release",y,new Subject(),project);
+                    var x = new ReleaseSprint("Software Release",y,new Subject(),project);
                     _repository.Create(x);
                     return x;
                 case "partial":
                     var z = new InDevelopment();
-                    var q = new PartialSprint(new Report(),"Partial product for Feedback",z,new Subject(), project);
+                    var q = new PartialSprint("Partial product for Feedback",z,new Subject(), project);
                     _repository.Create(q);
                     return q; 
                 default:

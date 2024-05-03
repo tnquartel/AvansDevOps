@@ -13,11 +13,11 @@ namespace Domain.Services.Patterns.Factory
     {
         private const DevPipe DevPipe = null;
 
-        public ISprint CreateSprint( int Id, Report Report, string Goal, DevPipe DevPipe = DevPipe)
+        public ISprint CreateSprint( string goal, ISprintState state, ISubject subject, Project project)
         {
             Console.WriteLine("Created Partial Sprint");
 
-            return new PartialSprint(Id,Report,Goal);
+            return new PartialSprint(goal, state, subject, project);
 
         }
     }

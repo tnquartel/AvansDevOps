@@ -13,11 +13,11 @@ namespace Domain.Services.Patterns.Factory
     class ReleaseSprintFactory : ISprintFactory
     {
         
-        public virtual ISprint CreateSprint(int Id, Report Report, string Goal, DevPipe Pipe)
+        public virtual ISprint CreateSprint(string goal, ISprintState state, ISubject subject, Project project)
         {
             Console.WriteLine("Created Release Sprint");
 
-            return new ReleaseSprint( Pipe, Id, Report,  Goal);
+            return new ReleaseSprint(goal, state, subject, project);
         }
     }
 }
