@@ -1,16 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "c7tO3wY3I+gD1MhpgfIcPpQR8kwGUv6a3WjqfBYRdv02MTvDHBJ0BY1bBnwgnnuy9XISKKl2vt2zDmhIHx2MGw==",
+  "dgSpecHash": "UD2QJi5A8N+0aNArJPC2tTp+S+exOLqiL6V3/ZkzXAuKbuJC2Tg5Xf9lnRyWSALCuHg7mHj+xpXhPfQ8mUt3Ig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\AvansDevOps\\UI.csproj",
+  "projectFilePath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\AvansDevOps\\UI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gnome\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
-    "C:\\Users\\gnome\\.nuget\\packages\\moq\\4.20.70\\moq.4.20.70.nupkg.sha512",
-    "C:\\Users\\gnome\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
-    "C:\\Users\\gnome\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\gnome\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\gnome\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\gnome\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512"
+    "C:\\Users\\thoma\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\thoma\\.nuget\\packages\\moq\\4.20.70\\moq.4.20.70.nupkg.sha512",
+    "C:\\Users\\thoma\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
