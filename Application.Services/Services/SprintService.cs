@@ -166,8 +166,8 @@ namespace Application.Services.Services
                 {
                     var devPipe = _devPipeService.NewDevPipe(sprint);
                     sprint.DevPipe = devPipe;
-                    devPipe.Subject.Subscribe("Scrummaster", new EmailObserver(sprint.Scrummaster));
-                    devPipe.Subject.Subscribe("ProductOwner", new EmailObserver(sprint.Project.ProductOwner));
+                    devPipe.Subject.Subscribe("Scrummaster", new EmailObserver(sprint.Scrummaster, sprint.Scrummaster.Email));
+                    devPipe.Subject.Subscribe("ProductOwner", new EmailObserver(sprint.Project.ProductOwner, sprint.Project.ProductOwner.Email));
                 }
            }
            else
