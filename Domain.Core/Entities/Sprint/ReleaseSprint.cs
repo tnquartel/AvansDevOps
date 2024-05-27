@@ -11,7 +11,7 @@ namespace Domain.Core.Entities.Sprint
     {
         public int Id { get; set; }
         public List<IBacklog> Backlogs { get; set; }
-        public Report Report { get;}
+        public Report? Report { get;}
         public string Goal {get;}
         public List<User> Users {get; set;}
         public DevPipe? DevPipe { get; set; }
@@ -20,10 +20,9 @@ namespace Domain.Core.Entities.Sprint
         public ISprintState State { get; set; }
         public Project Project { get; set; }
         public Review? Review { get; set; }
-        public ReleaseSprint(Report Report, string Goal, ISprintState state, ISubject subject, Project project)
+        public ReleaseSprint(string Goal, ISprintState state, ISubject subject, Project project)
         {
             Project = project;
-            this.Report = Report;
             this.Goal = Goal;
             this.Users = new List<User>();
             this.Backlogs = new List<IBacklog>();

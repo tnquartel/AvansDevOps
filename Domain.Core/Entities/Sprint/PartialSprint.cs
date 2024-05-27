@@ -11,7 +11,7 @@ namespace Domain.Core.Entities.Sprint
     {
         public int Id { get; set; }
         public List<IBacklog> Backlogs { get; set; }
-        public Report Report { get; set; }
+        public Report? Report { get; set; }
         public ISubject Subject { get; set; }
         public User? Scrummaster { get; set; }
         public string Goal {  get; }
@@ -20,9 +20,8 @@ namespace Domain.Core.Entities.Sprint
         public ISprintState State { get; set; }
         public DevPipe? DevPipe { get; set; }
         public Review? Review { get; set; }
-        public PartialSprint( Report report, string goal, ISprintState state ,ISubject subject,Project project) { 
+        public PartialSprint( string goal, ISprintState state ,ISubject subject,Project project) { 
             Project = project;
-            Report = report;
             Goal = goal;
             Users = new List<User>();
             Backlogs = new List<IBacklog>();

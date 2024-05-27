@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "QGL2pZx+gBy/VRz+5GUMx49y6h3hELWwfO/EECsoUmyVtCKkeCVlf/HBWpOAFpX+XfDIOIAI2bPwSI8CmcEJsQ==",
+  "dgSpecHash": "i6x6PjbXdbeFvvYJXF4s9bc3bEogGavhUj/++sgvNHmA5s7NtZ1K9hmZb2rXqdoDFpiWeAU7g+e3Q2JPaTubMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Services\\Domain.Services.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\thoma\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\thoma\\.nuget\\packages\\moq\\4.20.70\\moq.4.20.70.nupkg.sha512",
+    "C:\\Users\\thoma\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Services\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
