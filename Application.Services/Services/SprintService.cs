@@ -5,6 +5,8 @@ using Domain.Services.Patterns.Observer;
 using Domain.Services.Patterns.State.Sprint;
 using Domain.Services.Repositories;
 using Domain.Services.Services;
+using Domain.Services.Patterns.Factory;
+using Domain.Services.Patterns.Factory.Factory_Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,23 +27,30 @@ namespace Application.Services.Services
             _devPipeService = devPipeService;
             _reportService = reportService;
         }
-        public ISprint NewSprint(string type, Project project)
+        public ISprint NewSprint(ISprintFactory sprintFactory, Project project, string goal, ISubject subject)
         {
-            switch (type)
-            {
-                case "release":
-                    var y = new InDevelopment();
-                    var x = new ReleaseSprint("Software Release",y,new Subject(),project);
-                    _repository.Create(x);
-                    return x;
-                case "partial":
-                    var z = new InDevelopment();
-                    var q = new PartialSprint("Partial product for Feedback",z,new Subject(), project);
-                    _repository.Create(q);
-                    return q; 
-                default:
-                    throw new Exception("Sprint Type not found");
-            } 
+            var y = new InDevelopment();
+            var x = sprintFactory.CreateSprint(goal, y, subject, project);
+            _repository.Create(x);
+            return x;
+
+
+
+            //switch (type)
+            //{
+            //    case "release":
+            //        var y = new InDevelopment();
+            //        var x = new ReleaseSprint("Software Release",y,new Subject(),project);
+            //        _repository.Create(x);
+            //        return x;
+            //    case "partial":
+            //        var z = new InDevelopment();
+            //        var q = new PartialSprint("Partial product for Feedback",z,new Subject(), project);
+            //        _repository.Create(q);
+            //        return q; 
+            //    default:
+            //        throw new Exception("Sprint Type not found");
+            //} 
         }
 
         // Implements Observer Pattern

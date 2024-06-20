@@ -2,29 +2,33 @@
 using Domain.Core.Entities;
 using Domain.Services.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Services.Services
 {
     public class ActivityService : IActivityService
     {
-        public UserService UserService = new UserService();
+        private readonly IUserService _userService;
+
+        public ActivityService(IUserService userService)
+        {
+            _userService = userService;
+        }
 
         public void AssignDev(ActivityItem activity, User user)
         {
-            UserService.CoupleToFirstAvailable(activity, user);
+            _userService.CoupleToFirstAvailable(activity, user);
         }
 
-        public void NewThread(ActivityItem activity) 
+        public void NewThread(ActivityItem activity)
         {
             if (activity.Thread == null)
             {
-                activity.Thread = new MessageThread();
-                activity.Thread.ParentActivityItem = activity;
-            } else
+                activity.Thread = new MessageThread
+                {
+                    ParentActivityItem = activity
+                };
+            }
+            else
             {
                 Console.WriteLine("This activity already contains a thread.");
             }

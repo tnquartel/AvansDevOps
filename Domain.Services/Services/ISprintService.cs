@@ -1,5 +1,6 @@
 ﻿using Domain.Core.Entities;
 using Domain.Core.Entities.Sprint;
+using Domain.Services.Patterns.Factory.Factory_Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,6 @@ namespace Domain.Services.Services
 {
     public interface ISprintService
     {
-        public ISprint NewSprint(string type, Project project);
+        public ISprint NewSprint(ISprintFactory sprintFactory, Project project, string goal, ISubject subject);
     }
 }
