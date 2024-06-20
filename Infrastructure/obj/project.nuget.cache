@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7LbTudPQZD8=",
+  "dgSpecHash": "i9OI74mJgBNLRt0V/A6e2z14xoo+J/1dUbR/4iF/GPmLOnrgekdOhJpmfzQ/ls8rCun942aIu751RWCTPIjzVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gnome\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\gnome\\.nuget\\packages\\moq\\4.20.70\\moq.4.20.70.nupkg.sha512",

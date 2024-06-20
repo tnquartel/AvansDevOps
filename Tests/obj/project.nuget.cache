@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uhcXnUefDdw=",
+  "dgSpecHash": "lYp26S0e3ZQUmCckkwvK9POWxqj9G6e+5gBXHgLfnHyVAqqg4aET/JJ0Hd7tZIwSY4GHw+gHnzOfSc8OLlSUYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Tests.csproj",
+  "projectFilePath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gnome\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\gnome\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
