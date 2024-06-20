@@ -10,7 +10,7 @@ namespace Domain.Services.Patterns.Factory.Factory_Interfaces
 {
 
     // Interface for Factory pattern to create sprints.
-    interface ISprintFactory
+    public interface ISprintFactory
     {
         public ISprint CreateSprint(string goal, ISprintState state, ISubject subject, Project project);
     }

@@ -1,6 +1,7 @@
 ﻿using Domain.Core.Entities;
 using Domain.Core.Entities.Backlog;
 using Domain.Core.Entities.Sprint;
+using Domain.Services.Patterns.Factory.Factory_Interfaces;
 using Domain.Services.Patterns.Observer;
 using Domain.Services.Patterns.State.Sprint;
 using Domain.Services.Repositories;
@@ -56,9 +57,9 @@ namespace Application.Services.Services
         }
 
         //FR - 03
-        public void AddSprint(string type , Project project)
+        public void AddSprint(ISprintFactory sprintFactory, Project project, string goal, ISubject subject)
         {
-            project.Sprints.Add(_sprintService.NewSprint(type, project));
+            project.Sprints.Add(_sprintService.NewSprint(sprintFactory, project, goal, subject));
         }
 
     }
