@@ -13,7 +13,7 @@ using System;
 using Domain.Services.Patterns.Factory.Factory_Interfaces;
 using Domain.Services.Patterns.State.ItemStates;
 
-namespace SprintServiceTests
+namespace Tests
 {
     public class SprintServiceTests
     {
@@ -136,7 +136,7 @@ namespace SprintServiceTests
             var project = new Project("Test Project", productOwner);
 
             var subjectMock = new Mock<ISubject>();
-            var devPipe = new DevPipe(scrummaster,sprintMock.Object,subjectMock.Object); // Create a concrete DevPipe
+            var devPipe = new DevPipe(scrummaster, sprintMock.Object, subjectMock.Object); // Create a concrete DevPipe
 
             sprintMock.Setup(s => s.State.GetState()).Returns(finishedState);
             sprintMock.Setup(s => s.Scrummaster).Returns(scrummaster);
