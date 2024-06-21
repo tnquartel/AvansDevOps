@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lYp26S0e3ZQUmCckkwvK9POWxqj9G6e+5gBXHgLfnHyVAqqg4aET/JJ0Hd7tZIwSY4GHw+gHnzOfSc8OLlSUYw==",
+  "dgSpecHash": "SwoUCzg/wcw=",
   "success": true,
   "projectFilePath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
@@ -23,12 +23,5 @@
     "C:\\Users\\thoma\\.nuget\\packages\\xunit.extensibility.execution\\2.7.0\\xunit.extensibility.execution.2.7.0.nupkg.sha512",
     "C:\\Users\\thoma\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.7\\xunit.runner.visualstudio.2.5.7.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Tests\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
