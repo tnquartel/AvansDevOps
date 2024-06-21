@@ -50,7 +50,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"tnquartel_AvansDevOps" /o:"tnquartel" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportPaths="coverage.opencover.xml"
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"tnquartel_AvansDevOps" /o:"tnquartel" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportPaths="**/coverage.opencover.xml" /d:sonar.inclusions="**/*.cs" /d:sonar.exclusions="**/*.Tests.cs"
           dotnet build --no-incremental 
           dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=./TestResults/coverage/
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
