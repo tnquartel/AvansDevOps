@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Application.Services\\Application.Services.csproj": {
+    "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Application.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Application.Services\\Application.Services.csproj",
+        "projectUniqueName": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Application.Services.csproj",
         "projectName": "Application.Services",
-        "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Application.Services\\Application.Services.csproj",
-        "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Application.Services\\obj\\",
+        "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Application.Services.csproj",
+        "packagesPath": "C:\\Users\\gnome\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gnome\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,11 +29,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Core\\Domain.Core.csproj": {
-                "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Core\\Domain.Core.csproj"
+              "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Domain.Core.csproj"
               },
-              "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Services\\Domain.Services.csproj": {
-                "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Services\\Domain.Services.csproj"
+              "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Domain.Services.csproj": {
+                "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Domain.Services.csproj"
               }
             }
           }
@@ -42,6 +42,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -87,17 +92,17 @@
         }
       }
     },
-    "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Core\\Domain.Core.csproj": {
+    "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Domain.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Core\\Domain.Core.csproj",
+        "projectUniqueName": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Domain.Core.csproj",
         "projectName": "Domain.Core",
-        "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Core\\Domain.Core.csproj",
-        "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Core\\obj\\",
+        "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Domain.Core.csproj",
+        "packagesPath": "C:\\Users\\gnome\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gnome\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,6 +123,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -163,17 +173,17 @@
         }
       }
     },
-    "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Services\\Domain.Services.csproj": {
+    "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Domain.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Services\\Domain.Services.csproj",
+        "projectUniqueName": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Domain.Services.csproj",
         "projectName": "Domain.Services",
-        "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Services\\Domain.Services.csproj",
-        "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Services\\obj\\",
+        "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Domain.Services.csproj",
+        "packagesPath": "C:\\Users\\gnome\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gnome\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -188,8 +198,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Core\\Domain.Core.csproj": {
-                "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Core\\Domain.Core.csproj"
+              "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Domain.Core.csproj"
               }
             }
           }
@@ -198,6 +208,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -243,17 +258,17 @@
         }
       }
     },
-    "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\gnome\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gnome\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -268,14 +283,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Application.Services\\Application.Services.csproj": {
-                "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Application.Services\\Application.Services.csproj"
+              "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Application.Services.csproj": {
+                "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Application.Services.csproj"
               },
-              "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Core\\Domain.Core.csproj": {
-                "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Core\\Domain.Core.csproj"
+              "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Domain.Core.csproj"
               },
-              "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Services\\Domain.Services.csproj": {
-                "projectPath": "C:\\Users\\thoma\\source\\repos\\AvansDevOps\\Domain.Services\\Domain.Services.csproj"
+              "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Domain.Services.csproj": {
+                "projectPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Services\\Domain.Services.csproj"
               }
             }
           }
@@ -284,6 +299,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
