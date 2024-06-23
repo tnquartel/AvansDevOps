@@ -11,7 +11,7 @@ namespace Domain.Core.Entities.Sprint
     {
         public int Id { get; set; }
         public List<IBacklog> Backlogs { get; set; }
-        public Report? Report { get;}
+        public Report? Report { get; set; }
         public string Goal {get;}
         public List<User> Users {get; set;}
         public DevPipe? DevPipe { get; set; }

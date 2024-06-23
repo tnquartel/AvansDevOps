@@ -3,20 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28C0EABC-8577-4420-BC40-C3AB4A195455}|Tests\\Tests.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\tests\\application.services.tests\\services\\activityservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28C0EABC-8577-4420-BC40-C3AB4A195455}|Tests\\Tests.csproj|solutionrelative:tests\\application.services.tests\\services\\activityservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28C0EABC-8577-4420-BC40-C3AB4A195455}|Tests\\Tests.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\tests\\application.services.tests\\services\\devpipeservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C0EABC-8577-4420-BC40-C3AB4A195455}|Tests\\Tests.csproj|solutionrelative:tests\\application.services.tests\\services\\devpipeservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28C0EABC-8577-4420-BC40-C3AB4A195455}|Tests\\Tests.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\tests\\application.services.tests\\services\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28C0EABC-8577-4420-BC40-C3AB4A195455}|Tests\\Tests.csproj|solutionrelative:tests\\application.services.tests\\services\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28C0EABC-8577-4420-BC40-C3AB4A195455}|Tests\\Tests.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\tests\\application.services.tests\\services\\itemservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C0EABC-8577-4420-BC40-C3AB4A195455}|Tests\\Tests.csproj|solutionrelative:tests\\application.services.tests\\services\\itemservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C0EABC-8577-4420-BC40-C3AB4A195455}|Tests\\Tests.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\tests\\application.services.tests\\services\\threadservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C0EABC-8577-4420-BC40-C3AB4A195455}|Tests\\Tests.csproj|solutionrelative:tests\\application.services.tests\\services\\threadservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\application.services\\services\\threadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|solutionrelative:application.services\\services\\threadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\application.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|solutionrelative:application.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\application.services\\services\\sprintservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|solutionrelative:application.services\\services\\sprintservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\application.services\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|solutionrelative:application.services\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\application.services\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|solutionrelative:application.services\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\application.services\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|solutionrelative:application.services\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C0EABC-8577-4420-BC40-C3AB4A195455}|Tests\\Tests.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\tests\\application.services.tests\\services\\sprintservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C0EABC-8577-4420-BC40-C3AB4A195455}|Tests\\Tests.csproj|solutionrelative:tests\\application.services.tests\\services\\sprintservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\entities\\sprint\\partialsprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\entities\\sprint\\partialsprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\entities\\sprint\\isprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\entities\\sprint\\isprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\domain.core\\entities\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B8FFB9D-C28D-465E-BCC8-482AD1D8A63D}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\entities\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +67,118 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ActivityServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Application.Services.Tests\\Services\\ActivityServiceTest.cs",
-              "RelativeDocumentMoniker": "Tests\\Application.Services.Tests\\Services\\ActivityServiceTest.cs",
-              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Application.Services.Tests\\Services\\ActivityServiceTest.cs",
-              "RelativeToolTip": "Tests\\Application.Services.Tests\\Services\\ActivityServiceTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAsAAAA",
+              "Title": "DevpipeServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Application.Services.Tests\\Services\\DevpipeServiceTest.cs",
+              "RelativeDocumentMoniker": "Tests\\Application.Services.Tests\\Services\\DevpipeServiceTest.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Application.Services.Tests\\Services\\DevpipeServiceTest.cs",
+              "RelativeToolTip": "Tests\\Application.Services.Tests\\Services\\DevpipeServiceTest.cs",
+              "ViewState": "AQIAAD0BAAAAAAAAAAAMwEIBAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T12:28:19.264Z",
+              "WhenOpened": "2024-06-23T13:57:48.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Application.Services.Tests\\Services\\UserServiceTest.cs",
-              "RelativeDocumentMoniker": "Tests\\Application.Services.Tests\\Services\\UserServiceTest.cs",
-              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Application.Services.Tests\\Services\\UserServiceTest.cs",
-              "RelativeToolTip": "Tests\\Application.Services.Tests\\Services\\UserServiceTest.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAMwFcAAAAJAAAA",
+              "Title": "ItemServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Application.Services.Tests\\Services\\ItemServiceTest.cs",
+              "RelativeDocumentMoniker": "Tests\\Application.Services.Tests\\Services\\ItemServiceTest.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Application.Services.Tests\\Services\\ItemServiceTest.cs",
+              "RelativeToolTip": "Tests\\Application.Services.Tests\\Services\\ItemServiceTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T12:25:32.976Z",
+              "WhenOpened": "2024-06-23T13:57:47.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThreadServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Application.Services.Tests\\Services\\ThreadServiceTest.cs",
+              "RelativeDocumentMoniker": "Tests\\Application.Services.Tests\\Services\\ThreadServiceTest.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Application.Services.Tests\\Services\\ThreadServiceTest.cs",
+              "RelativeToolTip": "Tests\\Application.Services.Tests\\Services\\ThreadServiceTest.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAgwC4AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:51:45.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Application.Services\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\UserService.cs",
+              "RelativeToolTip": "Application.Services\\Services\\UserService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:49:45.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ThreadService.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\ThreadService.cs",
+              "RelativeDocumentMoniker": "Application.Services\\Services\\ThreadService.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\ThreadService.cs",
+              "RelativeToolTip": "Application.Services\\Services\\ThreadService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:49:39.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectService.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\ProjectService.cs",
+              "RelativeDocumentMoniker": "Application.Services\\Services\\ProjectService.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\ProjectService.cs",
+              "RelativeToolTip": "Application.Services\\Services\\ProjectService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:49:16.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ItemService.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\ItemService.cs",
+              "RelativeDocumentMoniker": "Application.Services\\Services\\ItemService.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\ItemService.cs",
+              "RelativeToolTip": "Application.Services\\Services\\ItemService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:49:09.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\ReportService.cs",
+              "RelativeDocumentMoniker": "Application.Services\\Services\\ReportService.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\ReportService.cs",
+              "RelativeToolTip": "Application.Services\\Services\\ReportService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwBAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:40:09.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ISprint.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Sprint\\ISprint.cs",
+              "RelativeDocumentMoniker": "Domain.Core\\Entities\\Sprint\\ISprint.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Sprint\\ISprint.cs",
+              "RelativeToolTip": "Domain.Core\\Entities\\Sprint\\ISprint.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBIAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:33:32.44Z",
               "EditorCaption": ""
             },
             {
@@ -76,28 +203,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Application.Services\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\UserService.cs",
-              "RelativeToolTip": "Application.Services\\Services\\UserService.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAiwCkAAAAoAAAA",
+              "DocumentIndex": 10,
+              "Title": "PartialSprint.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Sprint\\PartialSprint.cs",
+              "RelativeDocumentMoniker": "Domain.Core\\Entities\\Sprint\\PartialSprint.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Sprint\\PartialSprint.cs",
+              "RelativeToolTip": "Domain.Core\\Entities\\Sprint\\PartialSprint.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T09:10:33.458Z",
+              "WhenOpened": "2024-06-23T13:16:59.103Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Domain.Core\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\User.cs",
-              "RelativeToolTip": "Domain.Core\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAiAAAA",
+              "DocumentIndex": 9,
+              "Title": "SprintServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Application.Services.Tests\\Services\\SprintServiceTest.cs",
+              "RelativeDocumentMoniker": "Tests\\Application.Services.Tests\\Services\\SprintServiceTest.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Tests\\Application.Services.Tests\\Services\\SprintServiceTest.cs",
+              "RelativeToolTip": "Tests\\Application.Services.Tests\\Services\\SprintServiceTest.cs",
+              "ViewState": "AQIAAB8BAAAAAAAAAAAWwCkBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T09:08:18.01Z"
+              "WhenOpened": "2024-06-23T12:55:00.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SprintService.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\SprintService.cs",
+              "RelativeDocumentMoniker": "Application.Services\\Services\\SprintService.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\SprintService.cs",
+              "RelativeToolTip": "Application.Services\\Services\\SprintService.cs",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAUwMIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T12:53:59.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Report.cs",
+              "RelativeDocumentMoniker": "Domain.Core\\Entities\\Report.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Domain.Core\\Entities\\Report.cs",
+              "RelativeToolTip": "Domain.Core\\Entities\\Report.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:40:41.464Z",
+              "EditorCaption": ""
             }
           ]
         }

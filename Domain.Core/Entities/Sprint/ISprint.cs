@@ -12,7 +12,7 @@ namespace Domain.Core.Entities.Sprint
     {
         public int Id { get; }
         public List<IBacklog> Backlogs { get; set; }
-        public Report? Report { get; }
+        public Report? Report { get; set; }
         public String Goal { get; }
         public List<User> Users { get; set; }
         public ISubject Subject { get; set; }
