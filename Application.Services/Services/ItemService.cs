@@ -11,10 +11,13 @@ namespace Application.Services.Services
     {
         IItemRepository _repository;
         ProjectService _projectService;
+        IUserService _userService;
 
-        public ItemService(IItemRepository itemRepository, ProjectService projectService) {
+        public ItemService(IItemRepository itemRepository, ProjectService projectService, IUserService userService)
+        {
             _repository = itemRepository;
             _projectService = projectService;
+            _userService = userService;
         }
         public Item CreateItem(string name)
         {

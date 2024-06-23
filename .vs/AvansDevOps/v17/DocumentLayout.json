@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\application.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|solutionrelative:application.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|c:\\users\\gnome\\documents\\school\\jaar 3\\sofa_3\\opdracht\\application.services\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9203CA-3C04-4EE9-8A37-63DECB19BACC}|Application.Services\\Application.Services.csproj|solutionrelative:application.services\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +39,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectService.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\ProjectService.cs",
+              "RelativeDocumentMoniker": "Application.Services\\Services\\ProjectService.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\ProjectService.cs",
+              "RelativeToolTip": "Application.Services\\Services\\ProjectService.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAkwEYAAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T16:05:23.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Application.Services\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\gnome\\Documents\\school\\Jaar 3\\SOFA_3\\Opdracht\\Application.Services\\Services\\UserService.cs",
+              "RelativeToolTip": "Application.Services\\Services\\UserService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAkwBMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T16:04:09.989Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -16,14 +16,20 @@ namespace Tests.Application.Services.Tests.Services
     public class ItemServiceTests
     {
         private readonly Mock<IItemRepository> _repositoryMock;
+        private readonly Mock<IProjectRepository> _projectRepositoryMock;
         private readonly Mock<IUserService> _userServiceMock;
+        private readonly Mock<ISprintService> _sprintServiceMock;
         private readonly ItemService _itemService;
+        private readonly ProjectService _projectServiceMock;
 
         public ItemServiceTests()
         {
             _repositoryMock = new Mock<IItemRepository>();
+            _projectRepositoryMock = new Mock<IProjectRepository>();
+            _sprintServiceMock = new Mock<ISprintService>();
             _userServiceMock = new Mock<IUserService>();
-            _itemService = new ItemService(_repositoryMock.Object, _userServiceMock.Object);
+            _projectServiceMock = new ProjectService(_projectRepositoryMock.Object, _sprintServiceMock.Object);
+            _itemService = new ItemService(_repositoryMock.Object, _projectServiceMock ,_userServiceMock.Object);
         }
 
         [Fact]
@@ -33,7 +39,7 @@ namespace Tests.Application.Services.Tests.Services
             _repositoryMock.Setup(r => r.Create(It.IsAny<Item>()));
 
             // Act
-            var result = _itemService.CreateItem();
+            var result = _itemService.CreateItem("test name");
 
             // Assert
             Assert.NotNull(result);
