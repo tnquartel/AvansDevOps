@@ -28,7 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application.Services.Tests\Services\" />
     <Folder Include="Domain.Core.Tests\" />
     <Folder Include="Domain.Services.Tests\" />
     <Folder Include="Infrastructure.Tests\" />

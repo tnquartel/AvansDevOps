@@ -52,9 +52,11 @@ namespace Application.Services.Services
         {
             if (user.CoupledItem == null && user.CoupledActivityItem == null || user.CoupledItem != null && user.CoupledItem.State.GetState() is Done || user.CoupledActivityItem != null && user.CoupledActivityItem.parent.State.GetState() is Done)        
             {
-                return true;
+                // Was True
+                return false;
             }
-            return false;
+            // Was False
+            return true;
         }
 
     }
