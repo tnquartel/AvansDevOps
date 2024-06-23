@@ -17,13 +17,29 @@ namespace Tests.Application.Services.Tests.Services
 {
     public class SprintServiceTests
     {
+
+
         private readonly SprintService _sprintService;
+        private readonly Mock<IReportService> _mockReportService;
+        private readonly Mock<IObserver> _mockObserver;
+        private readonly Mock<ISprint> _mockSprint;
+        private readonly Mock<ISubject> _mockSubject;
+        private readonly Mock<ISprintState> _mockStateSprint;
+
         private readonly Mock<ISprintRepository> _sprintRepositoryMock;
         private readonly Mock<IDevPipeService> _devPipeServiceMock;
         private readonly Mock<IReportService> _reportServiceMock;
 
         public SprintServiceTests()
         {
+            _mockReportService = new Mock<IReportService>();
+            _mockObserver = new Mock<IObserver>();
+            _mockSprint = new Mock<ISprint>();
+            _mockSubject = new Mock<ISubject>();
+            _mockStateSprint = new Mock<ISprintState>();
+
+            _mockSprint.SetupGet(s => s.Subject).Returns(_mockSubject.Object);
+            _mockSprint.SetupGet(s => s.State).Returns(_mockStateSprint.Object);
             _sprintRepositoryMock = new Mock<ISprintRepository>();
             _devPipeServiceMock = new Mock<IDevPipeService>();
             _reportServiceMock = new Mock<IReportService>();
@@ -158,5 +174,185 @@ namespace Tests.Application.Services.Tests.Services
         }
 
 
+        [Fact]
+        public void Observe_ShouldSubscribeObserverToSprint()
+        {
+            // Act
+            _sprintService.Observe(_mockObserver.Object, _mockSprint.Object);
+
+            // Assert
+            _mockSubject.Verify(s => s.Subscribe("Test Failed", _mockObserver.Object), Times.Once);
+        }
+
+        [Fact]
+        public void TestFailure_ShouldNotifySprintObservers()
+        {
+            // Act
+            _sprintService.TestFailure(_mockSprint.Object);
+
+            // Assert
+            _mockSubject.Verify(s => s.Notify("Tests Failed", "The Tests have failed"), Times.Once);
+        }
+
+        [Fact]
+        public void NextState_ShouldTransitionToNextState()
+        {
+            // Act
+            _sprintService.NextState(_mockSprint.Object);
+
+            // Assert
+            _mockStateSprint.Verify(s => s.NextState(), Times.Once);
+        }
+
+
+        [Fact]
+        public void GenerateReport_ShouldPrintError_WhenReportAlreadyExists()
+        {
+            // Arrange
+            var report = new Report(_mockSprint.Object);
+            _mockSprint.SetupGet(s => s.Report).Returns(report);
+
+            using (var sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+
+                // Act
+                _sprintService.GenerateReport(_mockSprint.Object);
+
+                // Assert
+                var expectedMessage = "Sprint has already been reported upon";
+                Assert.Equal(expectedMessage, sw.ToString().Trim());
+            }
+        }
+
+        //new
+
+        //[Fact]
+        //public void Observe_ShouldSubscribeObserverToSprint()
+        //{
+        //    // Act
+        //    _sprintService.Observe(_mockObserver.Object, _mockSprint.Object);
+
+        //    // Assert
+        //    _mockSubject.Verify(s => s.Subscribe("Test Failed", _mockObserver.Object), Times.Once);
+        //}
+
+        //[Fact]
+        //public void TestFailure_ShouldNotifySprintObservers()
+        //{
+        //    // Act
+        //    _sprintService.TestFailure(_mockSprint.Object);
+
+        //    // Assert
+        //    _mockSubject.Verify(s => s.Notify("Tests Failed", "The Tests have failed"), Times.Once);
+        //}
+
+        //[Fact]
+        //public void NextState_ShouldTransitionToNextState()
+        //{
+        //    // Act
+        //    _sprintService.NextState(_mockSprint.Object);
+
+        //    // Assert
+        //    _mockStateSprint.Verify(s => s.NextState(), Times.Once);
+        //}
+
+        [Fact]
+        public void AddReview_ShouldSetReviewAndTransitionState_WhenSprintIsFinished()
+        {
+            // Arrange
+            var review = new Review();
+            var sprint = new PartialSprint { State = _mockStateSprint.Object };
+            _mockStateSprint.Setup(s => s.GetState()).Returns(new Finished(sprint));
+
+            // Act
+            _sprintService.AddReview(review, sprint);
+
+            // Assert
+            Assert.Equal(review, sprint.Review);
+            _mockStateSprint.Verify(s => s.NextState(), Times.Once);
+        }
+
+        [Fact]
+        public void AddReview_ShouldPrintError_WhenSprintIsNotFinished()
+        {
+            // Arrange
+            var review = new Review();
+            var stateMock = new InDevelopment();
+            var sprint = new PartialSprint("test goal", stateMock, new Mock<ISubject>().Object, new Project("test project", new User()));
+
+            using (var sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+
+                // Act
+                _sprintService.AddReview(review, sprint);
+
+                // Assert
+                var expectedMessage = "Sprint is not Finished";
+                Assert.Equal(expectedMessage, sw.ToString().Trim());
+            }
+        }
+
+        [Fact]
+        public void AddReview_ShouldPrintError_WhenReviewAlreadyAdded()
+        {
+            // Arrange
+            var review = new Review();
+            var sprint = new PartialSprint { State = _mockStateSprint.Object, Review = review };
+            _mockStateSprint.Setup(s => s.GetState()).Returns(new Finished(sprint));
+
+            using (var sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+
+                // Act
+                _sprintService.AddReview(review, sprint);
+
+                // Assert
+                var expectedMessage = "Already added this Report";
+                Assert.Equal(expectedMessage, sw.ToString().Trim());
+            }
+        }
+
+
+        [Fact]
+        public void GenerateReport_ShouldCreateNewReport_WhenNoneExists()
+        {
+            // Arrange
+            _mockSprint.SetupGet(s => s.Report).Returns((Report)null);
+
+            // Act
+            _sprintService.GenerateReport(_mockSprint.Object);
+
+            // Assert
+            //_mockReportService.Verify(r => r.NewReport(_mockSprint.Object), Times.Once);
+            _mockSprint.VerifySet(s => s.Report = It.IsAny<Report>(), Times.Once);
+        }
+
+        //[Fact]
+        //public void GenerateReport_ShouldPrintError_WhenReportAlreadyExists()
+        //{
+        //    // Arrange
+        //    var report = new Report(_mockSprint.Object);
+        //    _mockSprint.SetupGet(s => s.Report).Returns(report);
+
+        //    using (var sw = new StringWriter())
+        //    {
+        //        Console.SetOut(sw);
+
+        //        // Act
+        //        _sprintService.GenerateReport(_mockSprint.Object);
+
+        //        // Assert
+        //        var expectedMessage = "Sprint has already been reported upon";
+        //        Assert.Equal(expectedMessage, sw.ToString().Trim());
+        //    }
+        //}
     }
 }
+    
+
+
+
+

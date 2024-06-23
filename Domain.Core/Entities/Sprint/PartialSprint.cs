@@ -20,6 +20,9 @@ namespace Domain.Core.Entities.Sprint
         public ISprintState State { get; set; }
         public DevPipe? DevPipe { get; set; }
         public Review? Review { get; set; }
+
+        public PartialSprint() { }
+
         public PartialSprint( string goal, ISprintState state ,ISubject subject,Project project) { 
             Project = project;
             Goal = goal;
