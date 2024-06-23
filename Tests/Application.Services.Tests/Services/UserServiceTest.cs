@@ -9,6 +9,9 @@ using Application.Services.Services;
 
 namespace Tests.Application.Services.Tests.Services
 {
+    [Collection("User Service Tests")]
+    [CollectionDefinition("User Service Tests", DisableParallelization = true)]
+
     public class UserServiceTests
     {
         private readonly UserService _userService;
@@ -35,6 +38,7 @@ namespace Tests.Application.Services.Tests.Services
                 // Assert
                 var expectedMessage = "John Doe : Hello, world!";
                 Assert.Equal(expectedMessage, sw.ToString().Trim());
+                sw.Close();
             }
         }
 
@@ -60,6 +64,7 @@ namespace Tests.Application.Services.Tests.Services
                 Assert.Null(user.CoupledActivityItem);
                 var expectedMessage = $"{user.Name} is now coupled to item: {item.Id}.";
                 Assert.Equal(expectedMessage, sw.ToString().Trim());
+                sw.Close();
             }
         }
 
@@ -84,6 +89,7 @@ namespace Tests.Application.Services.Tests.Services
                 Assert.Null(user.CoupledItem);
                 var expectedMessage = $"{user.Name} is now coupled to activity: {activity.Id}.";
                 Assert.Equal(expectedMessage, sw.ToString().Trim());
+                sw.Close();
             }
         }
 

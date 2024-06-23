@@ -15,6 +15,9 @@ using Domain.Services.Patterns.State.ItemStates;
 
 namespace Tests.Application.Services.Tests.Services
 {
+    [Collection("Sprint Service Tests")]
+    [CollectionDefinition("Sprint Service Tests", DisableParallelization = true)]
+
     public class SprintServiceTests
     {
 
@@ -312,6 +315,7 @@ namespace Tests.Application.Services.Tests.Services
                 // Assert
                 var expectedMessage = "Already added this Report";
                 Assert.Equal(expectedMessage, sw.ToString().Trim());
+                sw.Close();
             }
         }
 

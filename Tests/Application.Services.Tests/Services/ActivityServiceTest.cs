@@ -8,6 +8,9 @@ using Domain.Services.Patterns.State.ItemStates;
 
 namespace Tests.Application.Services.Tests.Services
 {
+    [Collection("Thread Service Tests")]
+    [CollectionDefinition("Thread Service Tests", DisableParallelization = true)]
+
     public class ActivityServiceTests
     {
         private readonly ActivityService _activityService;
