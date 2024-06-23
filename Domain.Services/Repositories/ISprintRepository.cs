@@ -14,6 +14,6 @@ namespace Domain.Services.Repositories
         public List<ISprint> GetAll();
         public void Delete(int id);
         public void Update(int id, ISprint update);
-        public void Create(ISprint NewSprint);
+        public void Create(ISprint newSprint);
     }
 }

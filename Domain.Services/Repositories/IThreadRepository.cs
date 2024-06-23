@@ -13,6 +13,6 @@ namespace Domain.Services.Repositories
         public List<MessageThread> GetAll();
         public void Update(int id, MessageThread update);
         public void Delete(int id);
-        public void Create(MessageThread newDevPipe);
+        public void Create(MessageThread newMessageThread);
     }
 }

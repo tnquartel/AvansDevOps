@@ -23,7 +23,6 @@ namespace Tests.Application.Services.Tests.Services
 
 
         private readonly SprintService _sprintService;
-        private readonly Mock<IReportService> _mockReportService;
         private readonly Mock<IObserver> _mockObserver;
         private readonly Mock<ISprint> _mockSprint;
         private readonly Mock<ISubject> _mockSubject;
@@ -35,7 +34,6 @@ namespace Tests.Application.Services.Tests.Services
 
         public SprintServiceTests()
         {
-            _mockReportService = new Mock<IReportService>();
             _mockObserver = new Mock<IObserver>();
             _mockSprint = new Mock<ISprint>();
             _mockSubject = new Mock<ISubject>();

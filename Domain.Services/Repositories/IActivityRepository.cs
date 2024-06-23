@@ -14,6 +14,6 @@ namespace Domain.Services.Repositories
         public List<ActivityItem> GetAll();
         public void Update(int id, ActivityItem update);
         public void Delete(int id);
-        public void Create(ActivityItem newDevPipe);
+        public void Create(ActivityItem newActivity);
     }
 }

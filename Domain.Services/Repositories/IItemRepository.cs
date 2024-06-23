@@ -14,6 +14,6 @@ namespace Domain.Services.Repositories
         public List<Item> GetAll();
         public void Update(int id, Item update);
         public void Delete(int id);
-        public void Create(Item newDevPipe);
+        public void Create(Item newItem);
     }
 }

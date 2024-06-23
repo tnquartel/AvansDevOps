@@ -10,8 +10,8 @@ namespace Domain.Core.Entities
     {
         //Subscriber part of Observer pattern
         public Dictionary<IObserver, string> Observers { get; }
-        public void Subscribe(string Type, IObserver observer);
-        public void Unsubscribe(string Type, IObserver observer);
-        public void Notify(string Type, string Message);
+        public void Subscribe(string type, IObserver observer);
+        public void Unsubscribe(string type, IObserver observer);
+        public void Notify(string type, string message);
     }
 }

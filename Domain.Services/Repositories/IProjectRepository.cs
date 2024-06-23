@@ -13,6 +13,6 @@ namespace Domain.Services.Repositories
         public List<Project> GetAll();
         public void Update(int id, Project update);
         public void Delete(int id);
-        public void Create(Project newDevPipe);
+        public void Create(Project newProject);
     }
 }

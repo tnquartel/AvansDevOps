@@ -12,9 +12,9 @@ namespace Infrastructure.Repositories
     {
         private List<MessageThread> y = new List<MessageThread>();
 
-        public void Create(MessageThread newDevPipe)
+        public void Create(MessageThread newMessageThread)
         {
-            y.Add(newDevPipe);
+            y.Add(newMessageThread);
         }
 
         public void Delete(int id)
