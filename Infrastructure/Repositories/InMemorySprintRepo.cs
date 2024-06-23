@@ -16,9 +16,9 @@ namespace Infrastructure.Repositories
 
         public List<ISprint> Sprints = new List<ISprint>();
 
-        public void Create(ISprint NewSprint)
+        public void Create(ISprint newSprint)
         {
-            Sprints.Add(NewSprint);
+            Sprints.Add(newSprint);
         }
 
         public void Delete(int id)

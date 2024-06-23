@@ -49,13 +49,13 @@ namespace Domain.Core.Entities
             Observers.Remove(observer);
         }
 
-        public void Notify(string type, string Message)
+        public void Notify(string type, string message)
         {
             foreach (var observer in this.Observers)
             {
                 if (observer.Value == type)
                 {
-                    observer.Key.Update(Message);
+                    observer.Key.Update(message);
                 }
             }
         }

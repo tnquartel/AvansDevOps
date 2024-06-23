@@ -13,6 +13,6 @@ namespace Domain.Services.Repositories
         public List<Report> GetAll();
         public void Update(int id, Report update);
         public void Delete(int id);
-        public void Create(Report newDevPipe);
+        public void Create(Report newReport);
     }
 }
