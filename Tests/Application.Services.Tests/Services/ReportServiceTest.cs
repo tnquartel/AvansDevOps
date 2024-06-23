@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using Application.Services.Services;
 using System.Net.WebSockets;
 
-namespace ReportServiceTests
+namespace Tests.Application.Services.Tests.Services
 {
     public class ReportServiceTests
     {
@@ -73,7 +73,7 @@ namespace ReportServiceTests
             var scrummaster = new User() { Name = "scrummaster" };
             var stateMock = new Mock<ISprintState>();
             var subjectMock = new Mock<ISubject>();
-           
+
             var testUser_1 = new User() { Name = "test user" };
             var testUser_2 = new User() { Name = "test user" };
             var testUser_3 = new User() { Name = "test user" };
@@ -84,7 +84,7 @@ namespace ReportServiceTests
             userList.Add(testUser_2);
             userList.Add(testUser_3);
             userList.Add(testUser_4);
-            
+
             var sprintMock = new PartialSprint("test goal", stateMock.Object, subjectMock.Object, new Project("test sprint", productOwner));
             sprintMock.Scrummaster = scrummaster;
             sprintMock.Users = userList;
@@ -111,7 +111,7 @@ namespace ReportServiceTests
             // Arrange
             var report = new Report(new Mock<ISprint>().Object);
 
-            using (var sw = new System.IO.StringWriter())
+            using (var sw = new StringWriter())
             {
                 Console.SetOut(sw);
 

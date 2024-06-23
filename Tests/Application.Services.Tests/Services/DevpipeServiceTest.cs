@@ -7,7 +7,7 @@ using Domain.Services.Repositories;
 using Application.Services.Services;
 using System;
 
-namespace DevPipeServiceTests
+namespace Tests.Application.Services.Tests.Services
 {
     public class DevPipeServiceTests
     {
@@ -72,7 +72,7 @@ namespace DevPipeServiceTests
             var devPipe = new DevPipe(scrummaster, sprintMock.Object, new Subject());
             sprintMock.Setup(s => s.Scrummaster).Returns(scrummaster);
 
-            using (var sw = new System.IO.StringWriter())
+            using (var sw = new StringWriter())
             {
                 Console.SetOut(sw);
 
@@ -94,7 +94,7 @@ namespace DevPipeServiceTests
             var devPipe = new DevPipe(scrummaster, sprintMock.Object, new Subject());
             sprintMock.Setup(s => s.Scrummaster).Returns(scrummaster);
 
-            using (var sw = new System.IO.StringWriter())
+            using (var sw = new StringWriter())
             {
                 Console.SetOut(sw);
 

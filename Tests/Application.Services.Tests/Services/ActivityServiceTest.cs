@@ -6,7 +6,7 @@ using Domain.Services.Services;
 using Application.Services.Services;
 using Domain.Services.Patterns.State.ItemStates;
 
-namespace Tests
+namespace Tests.Application.Services.Tests.Services
 {
     public class ActivityServiceTests
     {

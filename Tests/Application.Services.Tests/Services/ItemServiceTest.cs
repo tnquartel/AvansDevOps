@@ -8,7 +8,7 @@ using Application.Services.Services;
 using System;
 using Domain.Services.Services;
 
-namespace ItemServiceTests
+namespace Tests.Application.Services.Tests.Services
 {
     public class ItemServiceTests
     {
@@ -61,7 +61,7 @@ namespace ItemServiceTests
             var activity = new ActivityItem(item);
             item.Activities.Add(activity);
 
-            using (var sw = new System.IO.StringWriter())
+            using (var sw = new StringWriter())
             {
                 Console.SetOut(sw);
 
@@ -125,7 +125,7 @@ namespace ItemServiceTests
                 Thread = new MessageThread()
             };
 
-            using (var sw = new System.IO.StringWriter())
+            using (var sw = new StringWriter())
             {
                 Console.SetOut(sw);
 

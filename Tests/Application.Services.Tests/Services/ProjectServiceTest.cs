@@ -11,7 +11,7 @@ using System;
 using Domain.Services.Patterns.State.ItemStates;
 using Domain.Services.Services;
 
-namespace ProjectServiceTests
+namespace Tests.Application.Services.Tests.Services
 {
     public class ProjectServiceTests
     {
@@ -66,7 +66,7 @@ namespace ProjectServiceTests
             var user = new User();
             project.Developers.Add(user);
 
-            using (var sw = new System.IO.StringWriter())
+            using (var sw = new StringWriter())
             {
                 Console.SetOut(sw);
 
@@ -101,7 +101,7 @@ namespace ProjectServiceTests
             var item = new Item(new ToDo());
             project.Items.Add(item);
 
-            using (var sw = new System.IO.StringWriter())
+            using (var sw = new StringWriter())
             {
                 Console.SetOut(sw);
 

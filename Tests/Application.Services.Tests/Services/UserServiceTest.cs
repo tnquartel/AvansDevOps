@@ -7,7 +7,7 @@ using Domain.Core.Entities.Backlog;
 using Domain.Services.Patterns.State.ItemStates;
 using Application.Services.Services;
 
-namespace UserServiceTests
+namespace Tests.Application.Services.Tests.Services
 {
     public class UserServiceTests
     {
@@ -128,7 +128,7 @@ namespace UserServiceTests
             var item = new Item(new ToDo());
             var done = new Done(item);
             item.State = done;
-            var activity = new ActivityItem (item);
+            var activity = new ActivityItem(item);
             user.CoupledActivityItem = activity;
             user.CoupledItem = null;
 
