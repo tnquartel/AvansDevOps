@@ -93,7 +93,7 @@ namespace Tests.Application.Services.Tests.Services
         {
             // Arrange
             var sprintMock = new Mock<ISprint>();
-            var item = new Item(new ToDo(), "test");
+            var item = new Item(new ToDo());
             var inDevelopmentState = new InDevelopment();
             var backlog = new List<IBacklog>();
 

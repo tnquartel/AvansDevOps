@@ -14,12 +14,11 @@ namespace Domain.Core.Entities.Backlog
         public MessageThread? Thread { get; set; }
         public List<ActivityItem> Activities { get; set; }
         public IStateItem State { get; set; }
-        public Project? project { get; set; }
+        public Project project { get; set; }
 
-        public Item(IStateItem state, string name) { 
+        public Item(IStateItem state) { 
             Activities = new List<ActivityItem>();
             State = state;
-            Name = name;
         }
 
     }   

@@ -17,8 +17,8 @@ namespace Application.Services.Services
 {
     public class ProjectService : IProjectService
     {
-        readonly private IProjectRepository _repository;
-        readonly private ISprintService _sprintService;
+        private IProjectRepository _repository;
+        private ISprintService _sprintService;
         public ProjectService(IProjectRepository repository, ISprintService sprintService) {
             _repository = repository;
             _sprintService = sprintService;

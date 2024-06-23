@@ -88,7 +88,7 @@ namespace Tests.Application.Services.Tests.Services
         {
             // Arrange
             var project = new Project("Test Project", new User());
-            var item = new Item(new ToDo(), "test");
+            var item = new Item(new ToDo());
 
             // Act
             _projectService.AddItem(item, project);
@@ -102,7 +102,7 @@ namespace Tests.Application.Services.Tests.Services
         {
             // Arrange
             var project = new Project("Test Project", new User());
-            var item = new Item(new ToDo(), "test");
+            var item = new Item(new ToDo());
             project.Items.Add(item);
 
             using (var sw = new StringWriter())

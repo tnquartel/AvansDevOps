@@ -15,7 +15,7 @@ namespace Application.Services.Services
     public class DevPipeService : IDevPipeService
     {
 
-        readonly IDevPipeRepository _repository;
+        IDevPipeRepository _repository;
         public DevPipeService( IDevPipeRepository devPipeRepository) {
             _repository = devPipeRepository;
         }
@@ -40,7 +40,7 @@ namespace Application.Services.Services
             }
         }
 
-        public static void Start(DevPipe devPipe, User user)
+        public void Start(DevPipe devPipe, User user)
         {
             if (devPipe.Sprint.Scrummaster == user)
             {
@@ -53,7 +53,7 @@ namespace Application.Services.Services
         }
 
         // Implements Observer Pattern
-        public static void Observe(IObserver observer, DevPipe devPipe)
+        public void Observe(IObserver observer, DevPipe devPipe)
         {
             if(devPipe.Subject != null)
             {
@@ -68,7 +68,7 @@ namespace Application.Services.Services
         }
         // FR - 08
 
-        public static void Restart(DevPipe devPipe, User user)
+        public void Restart(DevPipe devPipe, User user)
         {
             if (devPipe.Sprint.Scrummaster == user)
             {
@@ -80,7 +80,7 @@ namespace Application.Services.Services
             }
         }
 
-        public static void Cancel(DevPipe devPipe, User user)
+        public void Cancel(DevPipe devPipe, User user)
         {
             if (devPipe.Sprint.Scrummaster == user)
             {
@@ -92,7 +92,7 @@ namespace Application.Services.Services
             }
         }
 
-        public static void Failure(DevPipe devPipe)
+        public void Failure(DevPipe devPipe)
         {
             if (devPipe.Sprint.State.GetState() is Finished)
             {
@@ -104,7 +104,7 @@ namespace Application.Services.Services
             }
         }
 
-        public static void End(DevPipe devPipe)
+        public void End(DevPipe devPipe)
         {
             if (devPipe.Sprint.State.GetState() is Finished)
             {
@@ -119,7 +119,7 @@ namespace Application.Services.Services
             }
         }
 
-        public static void Deploy(DevPipe devPipe, User user)
+        public void Deploy(DevPipe devPipe, User user)
         {
             if (devPipe.Sprint.Scrummaster == user)
             {
@@ -131,7 +131,7 @@ namespace Application.Services.Services
             }
         }
 
-        public static void PubliciseTests(DevPipe devPipe, User user)
+        public void PubliciseTests(DevPipe devPipe, User user)
         {
             if (devPipe.Sprint.Scrummaster == user)
             {

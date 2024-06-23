@@ -13,7 +13,7 @@ namespace Domain.Core.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public User ProductOwner { get; set; }
-        public User? ScrumMaster { get; set; }
+        public User ScrumMaster { get; set; }
         public List<User> Developers { get; set; }
         public List<Item> Items { get; set; }
         public List<ISprint> Sprints { get; set; }

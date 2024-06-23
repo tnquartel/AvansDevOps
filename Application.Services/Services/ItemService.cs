@@ -9,9 +9,9 @@ namespace Application.Services.Services
 {
     public class ItemService : IItemService
     {
-        readonly IItemRepository _repository;
-        readonly ProjectService _projectService;
-        readonly IUserService _userService;
+        IItemRepository _repository;
+        ProjectService _projectService;
+        IUserService _userService;
 
         public ItemService(IItemRepository itemRepository, ProjectService projectService, IUserService userService)
         {
@@ -22,7 +22,8 @@ namespace Application.Services.Services
         public Item CreateItem(string name)
         {
             var y = new ToDo();
-            var x = new Item(y, name);
+            var x = new Item(y);
+            x.Name = name;
             y.Item = x;
             _repository.Create(x);
             return x;
