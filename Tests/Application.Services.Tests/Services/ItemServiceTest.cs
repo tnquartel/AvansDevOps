@@ -148,5 +148,58 @@ namespace Tests.Application.Services.Tests.Services
                 sw.Close();
             }
         }
+
+        [Fact]
+        public void ItemDone_ShouldBePossible_WhenTestFails()
+        {
+            // Arrange
+            var item = _itemService.CreateItem("test");
+
+            // Act
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.FailTest(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+
+            // Assert
+            Assert.IsType<Done>(item.State); 
+            Assert.NotNull(((Done)item.State).Item); 
+            Assert.Same(item, ((Done)item.State).Item); 
+
+        }
+
+        [Fact]
+        public void ItemDone_ShouldBePossible_WhenRejectedAndRestarted()
+        {
+            // Arrange
+            var item = _itemService.CreateItem("test");
+
+            // Act
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.Rejected(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+            _itemService.NextState(item);
+
+            // Assert
+            Assert.IsType<Done>(item.State);
+            Assert.NotNull(((Done)item.State).Item);
+            Assert.Same(item, ((Done)item.State).Item);
+
+        }
     }
 }

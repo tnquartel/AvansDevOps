@@ -58,6 +58,14 @@ namespace Application.Services.Services
             }
         }
 
+        public void Rejected(Item item)
+        {
+            if (item.State.GetState() is Tested testedState)
+            {
+                testedState.Rejected();
+            }
+        }
+
         public void AssignDev(Item item, User user)
         {
             _userService.CoupleToFirstAvailable(item, user);

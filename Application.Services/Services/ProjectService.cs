@@ -81,7 +81,7 @@ namespace Application.Services.Services
         //FR - 05
         public void OnItemStateChanged(Item item)
         {
-            if (item.State.GetState() is ReadyForTesting)
+            if (item.State.GetState() is ReadyForTesting && item.project != null)
             {
                 item.project.Notify("Email", $"Item '{item.Name}' is ready for testing");
                 item.project.Notify("App", $"Item '{item.Name}' is ready for testing");
@@ -90,7 +90,7 @@ namespace Application.Services.Services
 
         public void TestFailedNotification(Item item)
         {
-            if (item.project.ScrumMaster != null)
+            if (item.project != null && item.project.ScrumMaster != null)
             {
                 item.project.ScrumMaster.Update($"Item '{item.Name}' has failed in testing");
                 
