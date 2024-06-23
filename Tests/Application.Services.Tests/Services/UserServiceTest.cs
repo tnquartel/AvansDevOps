@@ -36,7 +36,7 @@ namespace Tests.Application.Services.Tests.Services
                 _userService.SendMessage(user, message);
 
                 // Assert
-                var expectedMessage = "John Doe : Hello, world!";
+                var expectedMessage = "John Doe New message: Hello, world!";
                 Assert.Equal(expectedMessage, sw.ToString().Trim());
                 sw.Close();
             }

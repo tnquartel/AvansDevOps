@@ -113,7 +113,7 @@ namespace Tests.Application.Services.Tests.Services
                 _projectService.AddItem(item, project);
 
                 // Assert
-                Assert.Equal("Project can't have duplicate items", sw.ToString().Trim());
+                Assert.Equal("Project can't have duplicate items or a item can't exist in multiple projects", sw.ToString().Trim());
                 Assert.Single(project.Items);
                 sw.Close();
             }
