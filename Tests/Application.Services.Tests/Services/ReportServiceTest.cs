@@ -10,6 +10,9 @@ using System.Net.WebSockets;
 
 namespace Tests.Application.Services.Tests.Services
 {
+    [Collection("Report Service Tests")]
+    [CollectionDefinition("Report Service Tests", DisableParallelization = true)]
+
     public class ReportServiceTests
     {
         private readonly ReportService _reportService;

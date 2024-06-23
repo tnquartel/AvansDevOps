@@ -10,6 +10,9 @@ using Domain.Services.Services;
 
 namespace Tests.Application.Services.Tests.Services
 {
+    [Collection("Item Service Tests")]
+    [CollectionDefinition("Item Service Tests", DisableParallelization = true)]
+
     public class ItemServiceTests
     {
         private readonly Mock<IItemRepository> _repositoryMock;
@@ -71,6 +74,7 @@ namespace Tests.Application.Services.Tests.Services
                 // Assert
                 Assert.Equal("Item can't have duplicate activities", sw.ToString().Trim());
                 Assert.Single(item.Activities);
+                sw.Close();
             }
         }
 
@@ -135,6 +139,7 @@ namespace Tests.Application.Services.Tests.Services
                 // Assert
                 Assert.Equal("This item already contains a thread.", sw.ToString().Trim());
                 Assert.NotNull(item.Thread); // Ensure thread is still not null
+                sw.Close();
             }
         }
     }

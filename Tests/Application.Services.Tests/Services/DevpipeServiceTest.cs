@@ -10,6 +10,8 @@ using Domain.Services.Patterns.State.Sprint;
 
 namespace Tests.Application.Services.Tests.Services
 {
+    [Collection("DevPipe Service Tests")]
+    [CollectionDefinition("DevPipe Service Tests", DisableParallelization = true)]
     public class DevPipeServiceTests
     {
         private readonly Mock<IDevPipeRepository> _repositoryMock;
@@ -86,6 +88,7 @@ namespace Tests.Application.Services.Tests.Services
 
                 // Assert
                 Assert.Equal("Started development pipeling", sw.ToString().Trim());
+                sw.Close();
             }
         }
 
@@ -108,6 +111,7 @@ namespace Tests.Application.Services.Tests.Services
 
                 // Assert
                 Assert.Equal("Only the scrummaster can start the Development Pipeline", sw.ToString().Trim());
+                sw.Close();
             }
         }
 
@@ -143,6 +147,7 @@ namespace Tests.Application.Services.Tests.Services
 
                 // Assert
                 Assert.Equal("Something's Wrong, I can feel it", sw.ToString().Trim());
+                sw.Close();
             }
         }
 
@@ -168,7 +173,8 @@ namespace Tests.Application.Services.Tests.Services
                     // Assert
                     var expectedMessage = "Restarted development pipeling";
                     Assert.Equal(expectedMessage, sw.ToString().Trim());
-                }
+                    sw.Close();
+            }
             }
 
             [Fact]
@@ -191,8 +197,10 @@ namespace Tests.Application.Services.Tests.Services
                     // Assert
                     var expectedMessage = "Only the scrummaster can restart the Development Pipeline";
                     Assert.Equal(expectedMessage, sw.ToString().Trim());
-                }
+                    sw.Close();
             }
+            
+        }
 
             [Fact]
             public void Cancel_ShouldRemoveDevPipe_WhenUserIsScrummaster()
@@ -230,6 +238,7 @@ namespace Tests.Application.Services.Tests.Services
                     // Assert
                     var expectedMessage = "Only the scrummaster can cancel the Development Pipeline";
                     Assert.Equal(expectedMessage, sw.ToString().Trim());
+                    sw.Close();
                 }
             }
 
@@ -268,6 +277,7 @@ namespace Tests.Application.Services.Tests.Services
                     // Assert
                     var expectedMessage = "Release sprint is not valid";
                     Assert.Equal(expectedMessage, sw.ToString().Trim());
+                    sw.Close();
                 }
             }
 
@@ -308,6 +318,7 @@ namespace Tests.Application.Services.Tests.Services
                     // Assert
                     var expectedMessage = "Release sprint is not valid";
                     Assert.Equal(expectedMessage, sw.ToString().Trim());
+                    sw.Close();
                 }
             }
 
@@ -330,6 +341,7 @@ namespace Tests.Application.Services.Tests.Services
                     // Assert
                     var expectedMessage = "Sprint Deployed";
                     Assert.Equal(expectedMessage, sw.ToString().Trim());
+                    sw.Close();
                 }
             }
 
@@ -353,8 +365,10 @@ namespace Tests.Application.Services.Tests.Services
                     // Assert
                     var expectedMessage = "Only the scrummaster can cancel the Development Pipeline";
                     Assert.Equal(expectedMessage, sw.ToString().Trim());
-                }
+                    sw.Close();
+
             }
+        }
 
             [Fact]
             public void PubliciseTests_ShouldPrintPublished_WhenUserIsScrummaster()
@@ -375,8 +389,9 @@ namespace Tests.Application.Services.Tests.Services
                     // Assert
                     var expectedMessage = "Tests Published";
                     Assert.Equal(expectedMessage, sw.ToString().Trim());
-                }
+                    sw.Close();
             }
+        }
 
             [Fact]
             public void PubliciseTests_ShouldPrintError_WhenUserIsNotScrummaster()
@@ -398,6 +413,7 @@ namespace Tests.Application.Services.Tests.Services
                     // Assert
                     var expectedMessage = "Only the scrummaster can cancel the Development Pipeline";
                     Assert.Equal(expectedMessage, sw.ToString().Trim());
+                    sw.Close();
                 }
             }
         }

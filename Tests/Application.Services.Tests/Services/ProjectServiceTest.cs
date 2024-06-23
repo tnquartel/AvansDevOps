@@ -13,6 +13,9 @@ using Domain.Services.Services;
 
 namespace Tests.Application.Services.Tests.Services
 {
+    [Collection("Project Service Tests")]
+    [CollectionDefinition("Project Service Tests", DisableParallelization = true)]
+
     public class ProjectServiceTests
     {
         private readonly Mock<IProjectRepository> _repositoryMock;
@@ -76,6 +79,7 @@ namespace Tests.Application.Services.Tests.Services
                 // Assert
                 Assert.Equal("User is already part of this project", sw.ToString().Trim());
                 Assert.Single(project.Developers);
+                sw.Close();
             }
         }
 
@@ -111,6 +115,7 @@ namespace Tests.Application.Services.Tests.Services
                 // Assert
                 Assert.Equal("Project can't have duplicate items", sw.ToString().Trim());
                 Assert.Single(project.Items);
+                sw.Close();
             }
         }
 
