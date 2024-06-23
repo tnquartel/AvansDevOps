@@ -14,13 +14,17 @@ namespace Application.Services.Services
     public class ItemService : IItemService
     {
         IItemRepository _repository;
-        public ItemService(IItemRepository itemRepository) {
+        ProjectService _projectService;
+
+        public ItemService(IItemRepository itemRepository, ProjectService projectService) {
             _repository = itemRepository;
+            _projectService = projectService;
         }
-        public Item CreateItem()
+        public Item CreateItem(string name)
         {
             var y = new ToDo();
             var x = new Item(y);
+            x.Name = name;
             y.Item = x;
             _repository.Create(x);
             return x;
@@ -45,6 +49,16 @@ namespace Application.Services.Services
         public void NextState(Item item)
         {
             item.State.NextState();
+            _projectService.OnItemStateChanged(item);
+        }
+
+        public void FailTest(Item item)
+        {
+            if (item.State.GetState() is Testing testingState)
+            {
+                testingState.Failed();
+                _projectService.TestFailedNotification(item);
+            }
         }
 
         public void AssignDev(Item item, User user)

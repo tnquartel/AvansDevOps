@@ -13,7 +13,7 @@ using System;
 using Domain.Services.Patterns.Factory.Factory_Interfaces;
 using Domain.Services.Patterns.State.ItemStates;
 
-namespace Tests
+namespace Tests.Application.Services.Tests.Services
 {
     public class SprintServiceTests
     {

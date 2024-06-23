@@ -3,6 +3,7 @@ using Domain.Core.Entities.Backlog;
 using Domain.Core.Entities.Sprint;
 using Domain.Services.Patterns.Factory.Factory_Interfaces;
 using Domain.Services.Patterns.Observer;
+using Domain.Services.Patterns.State.ItemStates;
 using Domain.Services.Patterns.State.Sprint;
 using Domain.Services.Repositories;
 using Domain.Services.Services;
@@ -36,6 +37,7 @@ namespace Application.Services.Services
             if (!project.Developers.Contains(user))
             {
                 project.Developers.Add(user);
+                project.Subscribe(user.PreferedNotificationType, user);
             }
             else
             {
@@ -43,16 +45,30 @@ namespace Application.Services.Services
             }
         }
 
+        public void AssignScrumMaster(User user, Project project)
+        {
+            if (project.ScrumMaster != null)
+            {
+                AddUser(project.ScrumMaster, project);
+                project.ScrumMaster = user;
+            } else
+            {
+                project.ScrumMaster = user;
+                project.Subscribe(user.PreferedNotificationType, user);
+            }
+        }
+
         //FR - 02
         public void AddItem(Item item, Project project)
         { 
-            if (!project.Items.Contains(item))
+            if (!project.Items.Contains(item) && item.project == null)
             {
                 project.Items.Add(item);
+                item.project = project;
             }
             else
             {
-                Console.WriteLine("Project can't have duplicate items");
+                Console.WriteLine("Project can't have duplicate items or a item can't exist in multiple projects");
             }
         }
 
@@ -60,6 +76,25 @@ namespace Application.Services.Services
         public void AddSprint(ISprintFactory sprintFactory, Project project, string goal, ISubject subject)
         {
             project.Sprints.Add(_sprintService.NewSprint(sprintFactory, project, goal, subject));
+        }
+
+        //FR - 05
+        public void OnItemStateChanged(Item item)
+        {
+            if (item.State.GetState() is ReadyForTesting)
+            {
+                item.project.Notify("Email", $"Item '{item.Name}' is ready for testing");
+                item.project.Notify("App", $"Item '{item.Name}' is ready for testing");
+            }
+        }
+
+        public void TestFailedNotification(Item item)
+        {
+            if (item.project.ScrumMaster != null)
+            {
+                item.project.ScrumMaster.Update($"Item '{item.Name}' has failed in testing");
+                
+            }
         }
 
     }
