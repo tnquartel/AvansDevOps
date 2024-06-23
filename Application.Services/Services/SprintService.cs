@@ -190,7 +190,7 @@ namespace Application.Services.Services
         {
             if (sprint.Report == null)
             {
-                _reportService.NewReport(sprint);
+                sprint.Report = _reportService.NewReport(sprint);
             }
             else
             {
