@@ -12,12 +12,14 @@ namespace Domain.Core.Entities
         public int Id { get; set; }
         public List<Message> Messages { get; set; }
         public List<User> Particapants { get; set; }
-        public Item ParentItem { get; set; }
-        public ActivityItem ParentActivityItem { get; set; }
+        public Item? ParentItem { get; set; }
+        public ActivityItem? ParentActivityItem { get; set; }
 
         public MessageThread()
         {
             this.Observers = new Dictionary<IObserver, string>();
+            this.Messages = new List<Message>();
+            this.Particapants = new List<User>();
         }
 
         public Dictionary<IObserver, string> Observers { get; private set; }

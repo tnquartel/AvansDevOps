@@ -26,7 +26,7 @@ namespace Tests.Application.Services.Tests.Services
         public void AssignDev_ShouldCallCoupleToFirstAvailable()
         {
             // Arrange
-            var activity = new ActivityItem(new Item(new ToDo()));
+            var activity = new ActivityItem(new Item(new ToDo(), "test"));
             var user = new User();
 
             // Act
@@ -40,7 +40,7 @@ namespace Tests.Application.Services.Tests.Services
         public void NewThread_ShouldCreateNewThread_WhenThreadIsNull()
         {
             // Arrange
-            var activity = new ActivityItem(new Item(new ToDo()));
+            var activity = new ActivityItem(new Item(new ToDo(), "test"));
 
             // Act
             _activityService.NewThread(activity);
@@ -54,7 +54,7 @@ namespace Tests.Application.Services.Tests.Services
         public void NewThread_ShouldNotCreateNewThread_WhenThreadIsNotNull()
         {
             // Arrange
-            var activity = new ActivityItem(new Item(new ToDo()))
+            var activity = new ActivityItem(new Item(new ToDo(), "test"))
             {
                 Thread = new MessageThread()
             };

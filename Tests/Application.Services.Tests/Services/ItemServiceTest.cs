@@ -52,7 +52,7 @@ namespace Tests.Application.Services.Tests.Services
         public void AddActivity_ShouldAddActivity_WhenNotAlreadyPresent()
         {
             // Arrange
-            var item = new Item(new ToDo());
+            var item = new Item(new ToDo(), "test");
             var activity = new ActivityItem(item);
 
             // Act
@@ -66,7 +66,7 @@ namespace Tests.Application.Services.Tests.Services
         public void AddActivity_ShouldNotAddDuplicateActivity()
         {
             // Arrange
-            var item = new Item(new ToDo());
+            var item = new Item(new ToDo(), "test");
             var activity = new ActivityItem(item);
             item.Activities.Add(activity);
 
@@ -89,7 +89,7 @@ namespace Tests.Application.Services.Tests.Services
         {
             // Arrange
             var stateMock = new Mock<IStateItem>();
-            var item = new Item(stateMock.Object);
+            var item = new Item(stateMock.Object, "test");
 
             // Act
             _itemService.NextState(item);
@@ -102,7 +102,7 @@ namespace Tests.Application.Services.Tests.Services
         public void AssignDev_ShouldCallCoupleToFirstAvailable()
         {
             // Arrange
-            var item = new Item(new ToDo());
+            var item = new Item(new ToDo(), "test");
             var user = new User();
 
             // Act
@@ -116,7 +116,7 @@ namespace Tests.Application.Services.Tests.Services
         public void NewThread_ShouldCreateNewThread_WhenThreadIsNull()
         {
             // Arrange
-            var item = new Item(new ToDo());
+            var item = new Item(new ToDo(), "test");
 
             // Act
             _itemService.NewThread(item);
@@ -130,7 +130,7 @@ namespace Tests.Application.Services.Tests.Services
         public void NewThread_ShouldNotCreateNewThread_WhenThreadIsNotNull()
         {
             // Arrange
-            var item = new Item(new ToDo())
+            var item = new Item(new ToDo(), "test")
             {
                 Thread = new MessageThread()
             };
