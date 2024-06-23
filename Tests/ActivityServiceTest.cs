@@ -6,7 +6,7 @@ using Domain.Services.Services;
 using Application.Services.Services;
 using Domain.Services.Patterns.State.ItemStates;
 
-namespace ActivityServiceTests
+namespace Tests
 {
     public class ActivityServiceTests
     {
@@ -56,7 +56,7 @@ namespace ActivityServiceTests
                 Thread = new MessageThread()
             };
 
-            using (var sw = new System.IO.StringWriter())
+            using (var sw = new StringWriter())
             {
                 Console.SetOut(sw);
 
