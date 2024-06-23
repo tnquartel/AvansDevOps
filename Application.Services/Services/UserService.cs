@@ -17,7 +17,7 @@ namespace Application.Services.Services
 
         public void SendMessage(User user, string message)
         {
-            Console.WriteLine(user.Name + " : " + message);
+            Console.WriteLine(user.Name + " New message: " + message);
         }
 
         public void CoupleToFirstAvailable(Item item, User user)

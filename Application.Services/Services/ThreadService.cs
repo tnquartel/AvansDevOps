@@ -20,7 +20,10 @@ namespace Application.Services.Services
                 if (!messageThread.Particapants.Contains(user)) 
                 {
                     messageThread.Particapants.Add(user);
+                    messageThread.Observers.Add(user, user.PreferedNotificationType);
                 }
+                messageThread.Notify("Email", newMessage.MessageBody);
+                messageThread.Notify("App", newMessage.MessageBody);
 
             } else
             {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Core.Entities
 {
-    public class User
+    public class User : IObserver
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -15,6 +15,18 @@ namespace Domain.Core.Entities
         public string Password { get; set; }
         public Item CoupledItem { get; set; }
         public ActivityItem CoupledActivityItem { get; set; }
+        public string PreferedNotificationType { get; set; }
 
+        public void Update(string Message)
+        {
+            if (PreferedNotificationType.Equals("Email"))
+            {
+                Console.WriteLine(Name + " New email: " + Message);
+            }
+            else if (PreferedNotificationType.Equals("App"))
+            {
+                Console.WriteLine(Name + " New notifcation: " + Message);
+            }
+        }
     }
 }

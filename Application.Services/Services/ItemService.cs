@@ -9,19 +9,18 @@ namespace Application.Services.Services
 {
     public class ItemService : IItemService
     {
-        private readonly IItemRepository _repository;
-        private readonly IUserService _userService;
+        IItemRepository _repository;
+        ProjectService _projectService;
 
-        public ItemService(IItemRepository itemRepository, IUserService userService)
-        {
+        public ItemService(IItemRepository itemRepository, ProjectService projectService) {
             _repository = itemRepository;
-            _userService = userService;
+            _projectService = projectService;
         }
-
-        public Item CreateItem()
+        public Item CreateItem(string name)
         {
             var y = new ToDo();
             var x = new Item(y);
+            x.Name = name;
             y.Item = x;
             _repository.Create(x);
             return x;
@@ -44,6 +43,16 @@ namespace Application.Services.Services
         public void NextState(Item item)
         {
             item.State.NextState();
+            _projectService.OnItemStateChanged(item);
+        }
+
+        public void FailTest(Item item)
+        {
+            if (item.State.GetState() is Testing testingState)
+            {
+                testingState.Failed();
+                _projectService.TestFailedNotification(item);
+            }
         }
 
         public void AssignDev(Item item, User user)
